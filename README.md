@@ -11,3 +11,7 @@ ProjetNSI
 
 ## 27/03
 * Amélioration de la page de login
+
+## 30/03
+* Création de la base de donnée
+* Liaison entre la base de donnée et register.php
