@@ -14,4 +14,4 @@ ProjetNSI
 
 ## 30/03
 * Création de la base de donnée
-* Liaison entre la base de donnée et register.php
+* Liaison entre la base de donnée et `register.php`
