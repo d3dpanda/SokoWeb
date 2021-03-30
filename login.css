@@ -1,5 +1,6 @@
 body{
-    background-color:#a7270b;
+   /* background-color:#a7270b;*/
+    background: linear-gradient(to right,#EA37F5, #37F5D5);
 }
 
 div#content{
@@ -13,7 +14,7 @@ div#content form{
     background-color: white;
     padding: 20px;
     display: block;
-    width: fit-content;
+    width: 20%;
     border: 1px ridge none;
     border-radius: 20px;
 }
@@ -63,7 +64,7 @@ a{
 input[type="submit"]:hover{
     background-color:#118a0d;
     color:white;
-    border:0.5px ridge #118a0d;
+    border:2px ridge #118a0d;
 }
 
 /* focus */
