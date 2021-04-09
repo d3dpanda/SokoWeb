@@ -14,10 +14,10 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 ### Clément
 #### Le 3/03:
-* Ajout d'un login/interface utilisateur
+* [Ajout d'un login/interface utilisateur](login/login.php)
 
 #### Le 4/03
-* Ajout d'un service d'inscription pour l'utilisateur
+* [Ajout d'un service d'inscription pour l'utilisateur](login/register.php)
 
 ####  Le 27/03
 * Amélioration de la page de login
