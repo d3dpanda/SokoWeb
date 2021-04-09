@@ -31,7 +31,11 @@
 * Code:
 * [Création du tableau](Sokoban/Début.html)
 
-* Création des règlespour bouger :
+* Création des règles pour bouger:
+* [Création des règles](Sokoban/Début.html)
 * 
+
+#### Le 9/04:
+* Création du Journal sur Github
 
 
