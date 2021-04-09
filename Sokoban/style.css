@@ -1,0 +1,23 @@
+body {
+  background-color: white; 
+  color: black
+}
+
+.cellMur {
+  width:50px; 
+  height: 50px; 
+  background:orange
+}
+
+.cellSol {
+  width:50px; 
+  height: 50px; 
+  background-color: grey
+}
+
+
+.cellObjectif {
+  width:50px; 
+  height: 50px; 
+  background-color: red
+}
