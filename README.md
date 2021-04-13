@@ -7,12 +7,11 @@ il peut donc passer au niveau suivant.
 Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant un pseudo, son adresse mail, ainsi qu'un mot de passe. La création d'un compte permet une sauvegarde de son score qui sera enregistrée dans une base de donnée. 
 
 ## Problème actuel
-
-Problème de liaison backend (liaison bdd et register.php)
+Problème de redirection de la page
 
 ## Solution retenu
 
-...
+
 
 ## Cahier Journal de Bord
 
@@ -29,6 +28,11 @@ Problème de liaison backend (liaison bdd et register.php)
 #### Le 30/03
 * Création de la base de donnée
 * Liaison entre la base de donnée et `register.php`
+
+#### Le 13/04
+* Amélioration du [register.php](login/register.php)
+* Amélioration de la communication back-end 
+
 
 ### Steven
 
