@@ -1,33 +1,48 @@
-// Vérification de la page de login
-
-function verifLogin() {
-    if (pseudo.value === "" || password.value === "") {
+function loginVerif() {
+      if (pseudoVerif.value == "" | passVerif.value == "" ) {
         alert("Veuillez remplir chaque champ");
+        return false;
     }
-    else {
-        return 1;
-    };   
+    else{
+        alert("Connecté");
+        return true;
+    }; 
+  
 };
-
-// Vérification de la page d'inscription
 
 function verifRegister() {
-    if (pseudo.value === "" || password.value === "" || email.value === "" ) {
-        alert("Veuillez remplir chaque champ");
+    let pseudoRegister = document.getElementById("pseudoEntry");
+    let emailRegister = document.getElementById("emailEntry");
+    let psswdRegister = document.getElementById("psswdEntry");
+    let confirmPsswdRegister = document.getElementById("psswdAgain");
+// Vérification du remplissage des champs 
+    if (pseudoRegister.value =="") {
+        alert("Vous avez oublié de renseigner un pseudo");
     }
-    else {
-        if (passbis.value !== password.value) {
-            alert("Les deux mots de passes ne sont pas identiques...");
-        }
-        else {
-            window.location.href = "http://clementlagier.dynv6.net/SokoWeb-main/login.php";
-        };
-    };
-};
+    else if (emailRegister.value == "") {
+        alert("Vous avez oublié de renseigner une adresse mail valide");
+    }
+    else if (psswdRegister.value == "") {
+        alert("Vous avez oublié de renseigner un mot de passe ");
 
-// définitions des variables
-var pseudo = document.getElementById("pseudoEntry");
-var password = document.getElementById("psswdEntry");
-var passbis = document.getElementById("passAgain");
-var email = document.getElementById("emailEntry");
-var htmlRedirect = "bdd_register.php";
+    }
+    else if (confirmPsswdRegister.value =="") {
+        alert("Vous n'avez pas confirmé votre mot de passe");
+    }
+    else if (confirmPsswdRegister.value != psswdRegister.value) {
+        alert("Les deux mots de passe ne correspondent pas");
+    }
+
+    else {
+        var confirmChoice = 1;
+        if (confirmChoice == 1) {
+            document.location.href ="./bdd_register.php";
+        }
+    };
+
+}
+
+var pseudoVerif = document.getElementById("pseudoEntry");
+var passVerif = document.getElementById("psswdEntry");    
+
+

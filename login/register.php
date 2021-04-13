@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 <head>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SokoWeb</title>
@@ -17,13 +17,18 @@
             <br>
             <input type="password" name="password" id="psswdEntry" placeholder="Entrez votre mot de passe... ">
             <br>
-            <input type="password" name="passAgain" id="passAgain" placeholder="Confirmez votre mot de passe...">
-          
-            <a class="loginlink" href="login.php">Déjà un compte ? Connectez vous</a>
-            <hr>
+            <input type="password" name="password" id="psswdAgain" placeholder="Confirmez votre mot de passe...">
+            <a href="login.php">Déjà un compte ? Connectez-vous !</a>
+
             <input type="submit" name="registery" id="connectionBtn" onclick="verifRegister()" value="S'inscrire">
-            </form>
+        </form>
     </div>
+<?php
+
+    include 'bdd_register.php';
+
+
+?>
 <script type="text/javascript" src="verifLogin.js"></script>
 </body>
 </html>
