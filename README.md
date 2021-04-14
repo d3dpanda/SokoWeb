@@ -65,6 +65,9 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Déplacement de la partie "printtableau" dans d'autres script afin de pouvoir creer d'autre niveau en fonction du script sélèctionné:
 * [level1](Sokoban/level1.js)
 
+#### Le 13/04:
+* Test de sélection des niveaux, résultat non concluant, des soucis d'importation, exemple le niveau 3 est appelé à la place du niveau 1.
+
 #### Le 14/04:
 * Amélioration de la selection de niveau, mais soucis de déplacement
 * [Amélioration](Sokoban/sauvegarde2.html)
