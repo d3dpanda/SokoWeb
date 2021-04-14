@@ -47,7 +47,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * [Création du tableau](Sokoban/Début.html)
 
 * Création des règles pour bouger:
-* [Création des règles](Sokoban/Début.html)
+* [Création des règles](Sokoban/regles.js)
 * 
 
 #### Le 9/04:
