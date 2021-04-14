@@ -6,7 +6,7 @@ de sorte à ce qu'elles arrivent à des emplacements précis. Lorsque toutes les
 il peut donc passer au niveau suivant.  
 Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant un pseudo, son adresse mail, ainsi qu'un mot de passe. La création d'un compte permet une sauvegarde de son score qui sera enregistrée dans une base de donnée. 
 
-## Problème actuel
+## Problème actuel
 Problème de redirection de la page
 
 ## Solution retenu
