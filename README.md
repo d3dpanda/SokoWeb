@@ -13,7 +13,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Communications js php
 
 ### Côté sokoban:
-* Amélioration du Skoban:
+* Amélioration de la sélection de niveau:
 * Regler le probleme de variable global/local avec i,j et stableau
 
 
