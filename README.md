@@ -55,7 +55,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Test d'insertion d'image dans les murs, résultat non concluant.
 * Début de création de différents niveaux
 * Déplacement de la partie "printtableau" dans d'autres script afin de pouvoir creer d'autre niveau en fonction du script sélèctionné:
-* [level1](Sokoban/level1.js)
+* [level1](Sokoban/lvl1.js)
 
 #### Le 14/04:
 * Amélioration de la selection de niveau, mais soucis de déplacement
