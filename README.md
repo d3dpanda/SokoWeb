@@ -12,6 +12,10 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * "Si champs vide, ne pas remplir la base"
 * Communications js php
 
+### Côté sokoban:
+* Amélioration du Skoban:
+* Regler le probleme de variable global/local avec i,j et stableau
+
 
 ## Solution retenu
 
