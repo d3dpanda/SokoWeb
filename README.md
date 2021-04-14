@@ -49,9 +49,11 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Création des règles pour bouger:
 * [Création des règles](Sokoban/regles.js)
 * Création de la victoire et de la possibilitée de bouger avec les touches du clavier:
-* [Création des règles](Sokoban/victoireetclavier.js)
+* [Création de la victoire et touche du clavier](Sokoban/victoireetclavier.js)
 
-#### Le 9/04:
-* Création du Journal sur Github
-
+#### Le 30/03
+* Test d'insertion d'image dans les murs, résultat non concluant.
+* Début de création de différents niveaux
+* Déplacement de la partie "printtableau" dans d'autres script afin de pouvoir creer d'autre niveau en fonction du script sélèctionné:
+* [level1](Sokoban/level1.js)
 
