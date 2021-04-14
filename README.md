@@ -48,7 +48,8 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 * Création des règles pour bouger:
 * [Création des règles](Sokoban/regles.js)
-* 
+* Création de la victoire et de la possibilitée de bouger avec les touches du clavier:
+* [Création des règles](Sokoban/victoireetclavier.js)
 
 #### Le 9/04:
 * Création du Journal sur Github
