@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="content">
-        <form  method="post">
+        <form method="post">
             <h1>Inscription</h1>
             <hr>
             <input type="text" name="pseudo" id="pseudoEntry" placeholder="Entrez votre pseudo... ">
@@ -25,8 +25,9 @@
     </div>
 <?php
 
-    include 'bdd_register.php';
 
+// Vérification champs remplis
+   
 
 ?>
 <script type="text/javascript" src="verifLogin.js"></script>
