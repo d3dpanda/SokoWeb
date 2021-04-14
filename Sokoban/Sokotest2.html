@@ -1,0 +1,224 @@
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Sokobantest</title>
+	<meta name="description" content="Jeu Sokoban">
+	<meta name="auteur" content="Clément et Steven">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onkeyup="AppuisTouche(event)">
+	<h1> Sokotest </h1>
+	<div><h3>Nombre de pas:<span id="Compteurdepas">0</span></div></h3>	
+	<table id="tbltableau"></table>
+
+
+<select name="lvl" id="Choixdulvl">
+    <option  value="0" onclick="">Choisissez un niveau</option>
+    <option value="1" onclick="lvl1()">Niveau-1</option>
+    <option value="2" onclick="lvl2()">Niveau-2</option>
+    <option value="3" onclick="lvl3()">Niveau-3</option>
+</select>
+	<script src="lvl1.js"></script>
+	<script src="lvl2.js"></script>
+	<script src="lvl3.js"></script>
+<script>
+
+
+
+Mur = "Mur"
+Sol	= "Sol"
+Objectif = "Objectif"
+Joueur = "Joueur"
+Boite = "Boite"
+var PosiJoueur = {i: 2, j:9};
+stableau = 0;
+	
+function selection(){
+	if (stableau == 1){
+		//alert(1)
+		stableau = Constlvl1()
+		var tbltableau = document.getElementById('tbltableau');
+		var strHTLM = '';
+		for (var i=0; i<stableau.length; i++) {
+			//alert(constru)
+			strHTLM += "<tr>";
+			//console.log(stableau[i]);
+			for (var j=0; j<stableau.length; j++) {
+				var laCell = stableau[i][j];
+				var Cellule;
+				if (laCell.type == Sol) {
+					Cellule = "Sol";
+				}else if (laCell.type == Mur) {
+					Cellule = "Mur";
+				}else if (laCell.type == Objectif) {
+					Cellule = "Objectif";
+				}
+				strHTLM += "<td class='cell"+ Cellule +"' onclick='appuis("+i+","+j+")' >";
+				if (laCell.ElementduJeu == Joueur) {
+					strHTLM += "<img src='img/Sans.png'>";
+				} else if (laCell.ElementduJeu == Boite) {
+					strHTLM += "<img src='img/Boite.png'>";
+				}
+				strHTLM += "</td>";
+			}
+			strHTLM += "</tr>";	
+		}
+		tbltableau.innerHTML = strHTLM;
+		return stableau
+	}
+	else if (stableau == 2){
+		//alert(2)
+		stableau = Constlvl2()
+		var tbltableau = document.getElementById('tbltableau');
+		var strHTLM = '';
+		for (var i=0; i<stableau.length; i++) {
+			strHTLM += "<tr>";
+				console.log(stableau[i]);
+			for (var j=0; j<stableau.length; j++) {
+				var laCell = stableau[i][j];
+				var Cellule;
+				if (laCell.type == Sol) {
+					Cellule = "Sol";
+				}else if (laCell.type == Mur) {
+					Cellule = "Mur";
+				}else if (laCell.type == Objectif) {
+					Cellule = "Objectif";
+				}
+				strHTLM += "<td class='cell"+ Cellule +"' onclick='appuis("+i+","+j+")' >";
+				if (laCell.ElementduJeu == Joueur) {
+					strHTLM += "<img src='img/Sans.png'>";
+				} else if (laCell.ElementduJeu == Boite) {
+					strHTLM += "<img src='img/Boite.png'>";
+				}
+				strHTLM += "</td>";
+			}
+			strHTLM += "</tr>";	
+		}
+		tbltableau.innerHTML = strHTLM;
+		return stableau
+	}
+	else if (stableau == 3){
+		//alert(3)
+		stableau = Constlvl3()
+		var tbltableau = document.getElementById('tbltableau');
+		var strHTLM = '';
+		for (var i=0; i<stableau.length; i++) {
+			strHTLM += "<tr>";
+				console.log(stableau[i]);
+			for (var j=0; j<stableau.length; j++) {
+				var laCell = stableau[i][j];
+				var Cellule;
+				if (laCell.type == Sol) {
+					Cellule = "Sol";
+				}else if (laCell.type == Mur) {
+					Cellule = "Mur";
+				}else if (laCell.type == Objectif) {
+					Cellule = "Objectif";
+				}
+				strHTLM += "<td class='cell"+ Cellule +"' onclick='appuis("+i+","+j+")' >";
+				if (laCell.ElementduJeu == Joueur) {
+					strHTLM += "<img src='img/Sans.png'>";
+				} else if (laCell.ElementduJeu == Boite) {
+					strHTLM += "<img src='img/Boite.png'>";
+				}
+				strHTLM += "</td>";
+			}
+			strHTLM += "</tr>";	
+		}
+		tbltableau.innerHTML = strHTLM;
+		return stableau
+	}
+}
+
+function lvl1() {
+	stableau = 1;
+	selection();
+}
+function lvl2() {
+	stableau = 2;
+	selection();
+}
+function lvl3() {
+	stableau = 3;
+	selection();
+}
+
+function appuis(stableau){
+	stableau = Constlvl1()
+	console.log(i,j,stableau);
+	var i = 0
+	var j = 0
+	var iDiff = i - PosiJoueur.i;
+	var jDiff = j - PosiJoueur.j;
+	var DiffAbsoDei = Math.abs(i - PosiJoueur.i);
+	var DiffAbsoDej = Math.abs(j - PosiJoueur.j);
+	//Si la case est à coté du joueur alors il peut bouger
+	if ((DiffAbsoDei+DiffAbsoDej == 1)) {
+		if ([i][j].type !== Mur) {
+			var PeuxBouger = true;
+			if (stableau[i][j].ElementduJeu == Boite) {
+				if (stableau[i+iDiff][j+jDiff].type != Mur && stableau[i+iDiff][j+jDiff].ElementduJeu == null) {
+					stableau[i][j].ElementduJeu = null;
+					stableau[i+iDiff][j+jDiff].ElementduJeu = Boite;
+				} else {
+					console.log("Il y a un mur dernière la boite");
+					PeuxBouger = false;
+				}
+			}
+			if (PeuxBouger) {
+				stableau[PosiJoueur.i][PosiJoueur.j].ElementduJeu = null;
+				PosiJoueur.i = i;
+				PosiJoueur.j = j;
+				stableau[PosiJoueur.i][PosiJoueur.j].ElementduJeu = Joueur;
+
+				var Compteurdepas = document.getElementById('Compteurdepas');
+				Compteurdepas.innerHTML++;
+				printtableau();
+			
+			}
+		} else console.log(DiffAbsoDei, DiffAbsoDej,"Il y a un mur");
+	}else console.log(DiffAbsoDei, DiffAbsoDej,"est trop loin");
+	VictoireOuPas();
+}
+
+function VictoireOuPas(stableau) {
+	stableau = Constlvl1()
+	console.log(stableau);
+	var laVictoire = true;
+	for (var i=0; i<stableau.length; i++) {
+		for (var j=0; j<stableau[0].length; j++) {
+			var laCell = stableau[i][j];
+			if (laCell.type == Objectif && laCell.ElementduJeu != Boite) laVictoire = false;
+		}
+	}
+	if (laVictoire) alert("Bravo, vous avez réussi ce niveau")
+}
+function AppuisTouche(event,stableau) {
+	stableau = Constlvl1()
+	console.log(stableau);
+	//console.log(event);
+	switch (event.keyCode){
+	case 37:
+		appuis(PosiJoueur.i, PosiJoueur.j-1)
+		break;
+	case 38:
+		appuis(PosiJoueur.i-1, PosiJoueur.j)
+		break;
+	case 39:
+		appuis(PosiJoueur.i, PosiJoueur.j+1)
+		break;
+	case 40:
+		appuis(PosiJoueur.i+1, PosiJoueur.j)
+		break;
+	}
+}
+</script>
+
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
