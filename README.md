@@ -11,6 +11,11 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Amélioration de la base de donnée:
 * "Si champs vide, ne pas remplir la base"
 * Communications js php
+* Comparaison de données pour [login.php](login/login.php)
+* Enregistrement des niveaux du joueur dans la base de donnée
+
+
+
 
 ### Côté sokoban:
 * Amélioration de la sélection de niveau:
