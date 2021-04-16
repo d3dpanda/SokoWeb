@@ -16,11 +16,17 @@ function loginVerif() {
 // fonction de vérification pour le formulaire d'inscription
 
 function verifRegister() {
+
+// Définition de variables
+
+
     let pseudoRegister = document.getElementById("pseudoEntry");
     let emailRegister = document.getElementById("emailEntry");
     let psswdRegister = document.getElementById("psswdEntry");
     let confirmPsswdRegister = document.getElementById("psswdAgain");
+
 // Vérification du remplissage des champs 
+   
     if (pseudoRegister.value =="") {
         alert("Vous avez oublié de renseigner un pseudo");
         
@@ -39,15 +45,13 @@ function verifRegister() {
     }
     else if (confirmPsswdRegister.value != psswdRegister.value) {
         alert("Les deux mots de passe ne correspondent pas");
-        
     }
 
-    else {
+ 
+    document.location.href ="http://clementlagier.dynv6.net/SokoWeb-main/login/bdd_register.php";
+    console.log(pseudoRegister.value);
 
-        document.location.href ="./bdd_register.php";
-            
-
- };
+ 
 
 }
 

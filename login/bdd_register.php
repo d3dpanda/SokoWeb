@@ -2,6 +2,7 @@
 <?php
 
     include 'bdd.php';
+    include 'register.php';
     // Enregistrement des informations dans la table lors de la première connexcion
     $pseudo = $_POST['pseudo'];
     $email =  $_POST['email'];
