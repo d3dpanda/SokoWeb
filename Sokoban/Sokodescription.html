@@ -1,0 +1,242 @@
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Sokobantest</title>
+	<meta name="description" content="Jeu Sokoban">
+	<meta name="auteur" content="Clément et Steven">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onkeyup="AppuisTouche(event)">
+	<h1> Sokotest </h1>
+	<div><h3>Nombre de pas:<span id="Compteurdepas">0</span></div></h3>	
+	<table id="tbltableau"></table>
+
+
+<select name="lvl" id="Choixdulvl">
+    <option  value="0" onclick="">Choisissez un niveau</option>
+    <option value="1" onclick="lvl1()">Niveau-1</option>
+    <option value="2" onclick="lvl2()">Niveau-2</option>
+    <option value="3" onclick="lvl3()">Niveau-3</option>
+    
+</select>
+	<script src="lvl1.js"></script>
+	<script src="lvl2.js"></script>
+	<script src="lvl3.js"></script>
+<script>
+
+
+//Création des variables pour faire le tableau
+Mur = "Mur"
+Sol	= "Sol"
+Objectif = "Objectif"
+Joueur = "Joueur"
+Boite = "Boite"
+var PosiJoueur = {i: 2, j:9};
+stableau = 0;
+	
+function selection(){
+	//Si stableau correspond à 1 alors on contruit le niveau 1
+	if (stableau == 1){
+		//alert(1)
+		//On appel la construction du niveau correspondant
+		stableau = Constlvl1()
+		//On affiche ensuite le tableau
+		var tbltableau = document.getElementById('tbltableau');
+		var strHTLM = '';
+		for (var i=0; i<stableau.length; i++) {
+			//alert(constru)
+			strHTLM += "<tr>";
+			//Sélection du type d'élément afin de l'afficher
+			for (var j=0; j<stableau.length; j++) {
+				//On passe dans le tableau cellule par cellule pour donner à chaque cellule une texture en fonction de son type défini précédement
+				var laCell = stableau[i][j];
+				var Cellule;
+				if (laCell.type == Sol) {
+					Cellule = "Sol";
+				}else if (laCell.type == Mur) {
+					Cellule = "Mur";
+				}else if (laCell.type == Objectif) {
+					Cellule = "Objectif";
+				}
+				strHTLM += "<td class='cell"+ Cellule +"' onclick='appuis("+i+","+j+")' >";
+				if (laCell.ElementduJeu == Joueur) {
+					strHTLM += "<img src='img/Sans.png'>";
+				} else if (laCell.ElementduJeu == Boite) {
+					strHTLM += "<img src='img/Boite.png'>";
+				}
+				strHTLM += "</td>";
+			}
+			strHTLM += "</tr>";	
+		}
+		tbltableau.innerHTML = strHTLM;
+	}//Si stableau correspond à 2 alors on contruit le niveau 2
+	else if (stableau == 2){
+		//alert(2)
+		//On appel la construction du niveau correspondant
+		stableau = Constlvl2()
+		//On affiche ensuite le tableau
+		var tbltableau = document.getElementById('tbltableau');
+		var strHTLM = '';
+		for (var i=0; i<stableau.length; i++) {
+			strHTLM += "<tr>";
+				console.log(stableau[i]);
+			for (var j=0; j<stableau.length; j++) {
+				//On passe dans le tableau cellule par cellule pour donner à chaque cellule une texture en fonction de son type défini précédement
+				var laCell = stableau[i][j];
+				var Cellule;
+				if (laCell.type == Sol) {
+					Cellule = "Sol";
+				}else if (laCell.type == Mur) {
+					Cellule = "Mur";
+				}else if (laCell.type == Objectif) {
+					Cellule = "Objectif";
+				}
+				strHTLM += "<td class='cell"+ Cellule +"' onclick='appuis("+i+","+j+")' >";
+				if (laCell.ElementduJeu == Joueur) {
+					strHTLM += "<img src='img/Sans.png'>";
+				} else if (laCell.ElementduJeu == Boite) {
+					strHTLM += "<img src='img/Boite.png'>";
+				}
+				strHTLM += "</td>";
+			}
+			strHTLM += "</tr>";	
+		}
+		tbltableau.innerHTML = strHTLM;
+		appuis(stableau);
+	}
+	//Si stableau correspond à 2 alors on contruit le niveau 2
+	else if (stableau == 3){
+		//alert(3)
+		//On appel la construction du niveau correspondant
+		stableau = Constlvl3()
+		//On affiche ensuite le tableau
+		var tbltableau = document.getElementById('tbltableau');
+		var strHTLM = '';
+		for (i=0; i<stableau.length; i++) {
+			strHTLM += "<tr>";
+				console.log(stableau[i]);
+			for (j=0; j<stableau.length; j++) {
+				//On passe dans le tableau cellule par cellule pour donner à chaque cellule une texture en fonction de son type défini précédement
+				var laCell = stableau[i][j];
+				var Cellule;
+				if (laCell.type == Sol) {
+					Cellule = "Sol";
+				}else if (laCell.type == Mur) {
+					Cellule = "Mur";
+				}else if (laCell.type == Objectif) {
+					Cellule = "Objectif";
+				}
+				//Permet la selection de case avec la souris
+				strHTLM += "<td class='cell"+ Cellule +"' onclick='appuis("+i+","+j+")' >";
+				if (laCell.ElementduJeu == Joueur) {
+					strHTLM += "<img src='img/Sans.png'>";
+				} else if (laCell.ElementduJeu == Boite) {
+					strHTLM += "<img src='img/Boite.png'>";
+				}
+				strHTLM += "</td>";
+			}
+			strHTLM += "</tr>";	
+		}
+		tbltableau.innerHTML = strHTLM;
+		appuis(i,j)
+	}
+}
+//Si le bouton de selection de lvl 1 est appuier alors on stock 1 dans stableau et on appel la fonction de selection de niveau
+function lvl1() {
+	stableau = 1;
+	selection();
+}
+//Si le bouton de selection de lvl 2 est appuier alors on stock 2 dans stableau et on appel la fonction de selection de niveau
+function lvl2() {
+	stableau = 2;
+	selection();
+}
+//Si le bouton de selection de lvl 3 est appuier alors on stock 3 dans stableau et on appel la fonction de selection de niveau
+function lvl3() {
+	stableau = 3;
+	selection();
+}
+
+function appuis(i,j){
+	console.log(i,j,stableau);
+	var iDiff = i - PosiJoueur.i;
+	var jDiff = j - PosiJoueur.j;
+	var DiffAbsoDei = Math.abs(i - PosiJoueur.i);
+	var DiffAbsoDej = Math.abs(j - PosiJoueur.j);
+	//Si la case est à coté du joueur alors il peut bouger
+	if ((DiffAbsoDei+DiffAbsoDej == 1)) {
+		//Si la case est à coté du joueur n'est pas un mur
+		if ([i][j].type !== Mur) {
+			var PeuxBouger = true;
+			//Si la case est à coté du joueur est une boite
+			if (stableau[i][j].ElementduJeu == Boite) {
+				// Si la case derrière la boite n'est pas un mur ni une boite alors elle peut bouger
+				if (stableau[i+iDiff][j+jDiff].type != Mur && stableau[i+iDiff][j+jDiff].ElementduJeu == null) {
+					stableau[i][j].ElementduJeu = null;
+					stableau[i+iDiff][j+jDiff].ElementduJeu = Boite;
+				// Sinon elle ne peut pas car il y un a élément qui la bloque
+				} else {
+					console.log("Il y a un mur dernière la boite");
+					PeuxBouger = false;
+				}
+			}
+			//Permet au joueur de ce déplacer
+			if (PeuxBouger) {
+				stableau[PosiJoueur.i][PosiJoueur.j].ElementduJeu = null;
+				PosiJoueur.i = i;
+				PosiJoueur.j = j;
+				stableau[PosiJoueur.i][PosiJoueur.j].ElementduJeu = Joueur;
+				//Compte le nombre de pas aprés chaque déplacement
+				var Compteurdepas = document.getElementById('Compteurdepas');
+				Compteurdepas.innerHTML++;
+				printtableau();
+			
+			}
+		} else console.log(DiffAbsoDei, DiffAbsoDej,"Il y a un mur");
+	}else console.log(DiffAbsoDei, DiffAbsoDej,"est trop loin");
+	//Vérifie à chaque fois si les condition de victoire sont remplies
+	VictoireOuPas();
+}
+
+//Test de victoire
+function VictoireOuPas() {
+	console.log(stableau);
+	var laVictoire = true;
+	for (var i=0; i<stableau.length; i++) {
+		for (var j=0; j<stableau[0].length; j++) {
+			var laCell = stableau[i][j];
+			//Si les cases Objectif ne sont pas remplis par une Boite alors la variable "LaVictoire" est mise en false
+			if (laCell.type == Objectif && laCell.ElementduJeu != Boite) laVictoire = false;
+		}
+	}
+	//Si laVictoire est true (tous les objectif sont remplis par une boite) alors on peut mettre l'alert de victoire
+	if (laVictoire) alert("Bravo, vous avez réussi ce niveau")
+}
+function AppuisTouche(event) {
+	console.log(stableau);
+	//console.log(event);
+	switch (event.keyCode){
+	case 37:
+		appuis(PosiJoueur.i, PosiJoueur.j-1)
+		break;
+	case 38:
+		appuis(PosiJoueur.i-1, PosiJoueur.j)
+		break;
+	case 39:
+		appuis(PosiJoueur.i, PosiJoueur.j+1)
+		break;
+	case 40:
+		appuis(PosiJoueur.i+1, PosiJoueur.j)
+		break;
+	}
+}
+</script>
+
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
