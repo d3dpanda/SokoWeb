@@ -20,43 +20,42 @@ function verifRegister() {
 // Définition de variables
 
 
-    let pseudoRegister = document.getElementById("pseudoEntry");
-    let emailRegister = document.getElementById("emailEntry");
-    let psswdRegister = document.getElementById("psswdEntry");
-    let confirmPsswdRegister = document.getElementById("psswdAgain");
-
 // Vérification du remplissage des champs 
    
-    if (pseudoRegister.value =="") {
+    if (pseudoRegister.value === "") {
         alert("Vous avez oublié de renseigner un pseudo");
         
     }
-    else if (emailRegister.value == "") {
+    else if (emailRegister.value === "") {
         alert("Vous avez oublié de renseigner une adresse mail valide");
         
     }
-    else if (psswdRegister.value == "") {
+    else if (psswdRegister.value === "") {
         alert("Vous avez oublié de renseigner un mot de passe ");
         
     }
-    else if (confirmPsswdRegister.value =="") {
+    else if (confirmPsswdRegister.value ==="") {
         alert("Vous n'avez pas confirmé votre mot de passe");
         
     }
-    else if (confirmPsswdRegister.value != psswdRegister.value) {
+    else if (confirmPsswdRegister.value !== psswdRegister.value) {
         alert("Les deux mots de passe ne correspondent pas");
     }
 
- 
-    document.location.href ="http://clementlagier.dynv6.net/SokoWeb-main/login/bdd_register.php";
-    console.log(pseudoRegister.value);
-
+    else{
+        window.location = "bdd_register.php";
+        
+    };
  
 
 }
 
 // definition de variable pour les deux fonctions
-var pseudoVerif = document.getElementById("pseudoEntry");
-var passVerif = document.getElementById("psswdEntry");    
 
 
+var pseudoRegister = document.getElementById("pseudoEntry");
+var emailRegister = document.getElementById("emailEntry");
+var psswdRegister = document.getElementById("psswdEntry");
+var confirmPsswdRegister = document.getElementById("psswdAgain");
+var btn = document.getElementById("connectionBtn");
+btn.addEventListener("click", false, verifRegister);
