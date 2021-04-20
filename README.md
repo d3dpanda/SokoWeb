@@ -49,6 +49,9 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 #### Le 14/04:
 * [Réglage du problème d'insertion dans la bdd](login/register.php)
 
+#### Le 20/04:
+* Résolution du problème de liaison bdd/formulaire
+
 
 
 ### Steven
