@@ -80,5 +80,5 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 #### Le 20/04:
 * Ajout de commentaire à chaques parties du programme pour une meilleur compréhension
 * [Commentaire](Sokoban/Sokodescription.html)
-* Création d'un choix de niveau "Brut" temporairement pour avoir un choix de niveau et un sokoban qui fonctionne
+* Création d'un choix de niveau "Brut" temporaire pour avoir un choix de niveau et un sokoban qui fonctionne
 
