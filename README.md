@@ -78,6 +78,6 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * [Amélioration du programme principale](Sokoban/Sokotest2.html)
 
 #### Le 20/04:
-* Ajout de description à chaques parties du programme pour une meilleur compréhension
-* [Description](Sokoban/Sokodescription.html)
+* Ajout de commentaire à chaques parties du programme pour une meilleur compréhension
+* [Commentaire](Sokoban/Sokodescription.html)
 
