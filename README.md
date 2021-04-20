@@ -77,3 +77,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Amélioration de la selection de niveau, mais soucis de déplacement
 * [Amélioration du programme principale](Sokoban/Sokotest2.html)
 
+#### Le 20/04:
+* Ajout de description à chaques parties du programme pour une meilleur compréhension
+* [Description](Sokoban/Sokotest2.html)
+
