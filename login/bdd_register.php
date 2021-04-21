@@ -1,4 +1,3 @@
-
 <?php
 
     include 'bdd.php';
@@ -12,9 +11,11 @@
 // Condition "Si les champs sont vides, recharger la page, sinon ajouter dans la bdd"
 
     $count =  $bdd->exec($sql);    
+    
 
 // Attente de quelques seconde
-    sleep(3);
-    header("Location: ../Sokoban/Sokoban.html");
+//    sleep(3);
+//    header("Location: ../Sokoban/Sokoban.html");
 
 ?>
+

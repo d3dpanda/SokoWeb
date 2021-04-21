@@ -5,12 +5,14 @@
     $pseudo = $_POST['pseudo'];
     $pass = $_POST['password'];
 
-    $userInfo = $bdd->query("SELECT (pseudo) FROM User WHERE pseudo = 'test2';");
-
+    $userInfo = $bdd -> query("SELECT mdp FROM User WHERE pseudo ='$pseudo';");
+    $donnee = $userInfo -> fetch();
+    if ($pass == $donnee) {
+        header("Location: ../Sokoban/Sokoban.html");
     
+    }
+    else {
+        header("Location: ./login.php");
+    };
+
 ?>
-<script type="text/javascript">
-    var test = <?php json_encode($userInfo); ?>;
-    console.log(test);
-</script>
-<script type="text/javascript" src="verifLogin.js"></script>

@@ -9,7 +9,7 @@
 <body>
 <!-- Formulaire de connexion -->
     <div id="content">
-        <form method="post" action="bdd_login.php" onsubmit="return loginVerif()" >
+        <form method="post" action="bdd_login.php">
             <h1>Connexion</h1>
             <hr>
             <input type="text" name="pseudo" id="pseudoEntry" placeholder="Entrez votre pseudo... ">
@@ -18,7 +18,7 @@
             <br>
             <a href="register.php">Pas de compte ? Inscrivez-vous</a> 
             <br>
-            <input type="submit" name="jouer" id="connectionBtn" onclick="loginVerif()"  value="Se Connecter">
+            <input type="submit" name="jouer" id="connectionBtn" value="Se Connecter">
         </form>
     </div>
 
