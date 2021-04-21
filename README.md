@@ -8,14 +8,8 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 ## To-Do list
 ### Côté serveur:
-* Amélioration de la base de donnée:
-* "Si champs vide, ne pas remplir la base"
-* Communications js php
 * Comparaison de données pour [login.php](login/login.php)
 * Enregistrement des niveaux du joueur dans la base de donnée
-
-
-
 
 ### Côté sokoban:
 * Amélioration de la sélection de niveau:
@@ -53,8 +47,8 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Résolution du problème de liaison bdd/formulaire
 
 #### Le 21/04
-* Finition du register
-
+* Finition du [register](login/register.php)
+* Tests de comparaison des données du formulaire à la base de données [login.php](login/login.php)
 
 
 ### Steven
