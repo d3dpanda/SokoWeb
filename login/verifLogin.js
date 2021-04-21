@@ -2,20 +2,14 @@
 // fonction de vérification pour le formulaire de connexion
 
 function loginVerif() {
-      if (pseudoVerif.value == "" | passVerif.value == "" ) {
-        alert("Veuillez remplir chaque champ");
-        return false;
-    }
-    else{
-        alert("Connecté");
-        return true;
-    }; 
-  
+    console.log();
 };
 
 // fonction de vérification pour le formulaire d'inscription
 
 function verifRegister() {
+
+    
 
 // Définition de variables
 
@@ -24,38 +18,41 @@ function verifRegister() {
    
     if (pseudoRegister.value === "") {
         alert("Vous avez oublié de renseigner un pseudo");
-        
+        return false;
     }
     else if (emailRegister.value === "") {
         alert("Vous avez oublié de renseigner une adresse mail valide");
-        
+        return false;
     }
     else if (psswdRegister.value === "") {
         alert("Vous avez oublié de renseigner un mot de passe ");
-        
+        return false;
     }
     else if (confirmPsswdRegister.value ==="") {
         alert("Vous n'avez pas confirmé votre mot de passe");
-        
+        return false;
     }
     else if (confirmPsswdRegister.value !== psswdRegister.value) {
         alert("Les deux mots de passe ne correspondent pas");
+        return false;
     }
 
     else{
-        window.location = "bdd_register.php";
-        
+        document.formEntry.submit();
     };
  
 
 }
 
-// definition de variable pour les deux fonctions
-
+// informations relatives à l'inscription
 
 var pseudoRegister = document.getElementById("pseudoEntry");
 var emailRegister = document.getElementById("emailEntry");
 var psswdRegister = document.getElementById("psswdEntry");
 var confirmPsswdRegister = document.getElementById("psswdAgain");
-var btn = document.getElementById("connectionBtn");
-btn.addEventListener("click", false, verifRegister);
+// var btn = document.getElementById("connectionBtn");
+
+// informations relatives à la connexion
+
+var pseudoVerif = document.getElementById("pseudoEntry");
+var passVerif = document.getElementById("psswdEntry");

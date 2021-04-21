@@ -9,7 +9,7 @@
 <body>
 <!-- Formulaire de connexion -->
     <div id="content">
-        <form method="post" action="bdd.php" >
+        <form method="post" action="bdd_login.php" onsubmit="return loginVerif()" >
             <h1>Connexion</h1>
             <hr>
             <input type="text" name="pseudo" id="pseudoEntry" placeholder="Entrez votre pseudo... ">
@@ -21,17 +21,6 @@
             <input type="submit" name="jouer" id="connectionBtn" onclick="loginVerif()"  value="Se Connecter">
         </form>
     </div>
-<?php
-
-// A FINIR
-// Comparaison des données reçues à celles de la bd
-    $pseudo = $_POST['pseudo'];
-    $pass = $_POST['pass'];
-    
-    include 'bdd.php';
-
-
-?>
 
 <!-- Code Javascript -->
 <script type="text/javascript" src="verifLogin.js"></script>

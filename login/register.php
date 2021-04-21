@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="content">
-        <form method="post">
+        <form action="bdd_register.php" method="post" name="formEntry" onsubmit="return verifRegister()">
             <h1>Inscription</h1>
             <hr>
             <input type="text" name="pseudo" id="pseudoEntry" placeholder="Entrez votre pseudo... ">
