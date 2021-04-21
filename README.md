@@ -9,6 +9,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 ## To-Do list
 ### Côté serveur:
 * Comparaison de données pour [login.php](login/login.php)
+* Suppression des doublons dans la base de données  
 * Enregistrement des niveaux du joueur dans la base de donnée
 
 ### Côté sokoban:
@@ -17,7 +18,8 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 
 ## Solution retenu
-
+### Clément
+* Méthode `fetch()` pour sélectionner une colonne en php
 
 
 ## Cahier Journal de Bord
@@ -49,6 +51,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 #### Le 21/04
 * Finition du [register](login/register.php)
 * Tests de comparaison des données du formulaire à la base de données [login.php](login/login.php)
+* Tests de suppression des doublons dans la bdd lors de l'enregistrement
 
 
 ### Steven
