@@ -52,6 +52,9 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 #### Le 20/04:
 * Résolution du problème de liaison bdd/formulaire
 
+#### Le 21/04
+* Finition du register
+
 
 
 ### Steven
