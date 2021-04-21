@@ -1,8 +1,18 @@
 
-// fonction de vérification pour le formulaire de connexion
+// fonction de vérification pour le formulaire de connexion "si vide, alors..."
 
 function loginVerif() {
-    console.log();
+    if (pseudoVerif.value === "") {
+        alert("Vous avez oublié de renseigner un pseudo");
+        return false;
+    }
+    else if (passVerif.value === "") {
+        alert("Veuillez renseigner votre mot de passe");
+        return false;
+    }
+    else {
+        document.loginForm.submit();
+    }
 };
 
 // fonction de vérification pour le formulaire d'inscription

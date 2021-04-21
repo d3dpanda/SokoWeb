@@ -12,6 +12,7 @@
 
     $count =  $bdd->exec($sql);    
     
+    
 
 // Attente de quelques seconde
 //    sleep(3);

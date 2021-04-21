@@ -1,18 +1,12 @@
 <?php 
+// importation des fichiers php
     include 'bdd.php';
     include 'login.php';
-
+// Définitions des variables
     $pseudo = $_POST['pseudo'];
     $pass = $_POST['password'];
-
-    $userInfo = $bdd -> query("SELECT mdp FROM User WHERE pseudo ='$pseudo';");
-    $donnee = $userInfo -> fetch();
-    if ($pass == $donnee) {
-        header("Location: ../Sokoban/Sokoban.html");
-    
-    }
-    else {
-        header("Location: ./login.php");
-    };
-
-?>
+// Sélection des éléments nécessaires
+    $userInfo = $bdd -> query("SELECT (pseudo,mdp) FROM User WHERE pseudo ='$pseudo';");
+// Comparaison formulaire/base de donnée
+  
+?> 
