@@ -6,7 +6,7 @@
 	<meta name="description" content="Jeu Sokoban">
 	<meta name="auteur" content="Clément et Steven">
 	
-	<link rel="stylesheet" href="Sokoban/css/style.css">
+	<link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body onkeyup="AppuisTouche(event)">
@@ -74,9 +74,9 @@ function printtableau() {
 			}
 			strHTLM += "<td class='cell"+ Cellule +"' onclick='appuis("+i+","+j+")' >";
 			if (laCell.ElementduJeu == Joueur) {
-				strHTLM += "<img src='img/Sans.png'>";
+				strHTLM += "<img src='./Sans.png'>";
 			} else if (laCell.ElementduJeu == Boite) {
-				strHTLM += "<img src='img/Boite.png'>";
+				strHTLM += "<img src='./Boite.png'>";
 			}
 			strHTLM += "</td>";
 		}
