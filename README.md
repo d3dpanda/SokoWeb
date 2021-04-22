@@ -55,7 +55,8 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 #### Le 22/04
 * Comparaison des données de la base de donnée à celles envoyées par le formulaire [login.php](login/login.php) et [bdd_login.php](login/bdd_login.php)
-
+* Ajout d'une page d'acceuil [index.html](index.html)
+* modification du [fichier css](Sokoban/css/styles.css)
 
 ### Steven
 
