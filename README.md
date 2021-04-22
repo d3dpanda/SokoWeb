@@ -10,6 +10,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 ### Côté serveur:
 * Suppression des doublons dans la base de données  
 * Enregistrement des niveaux du joueur dans la base de donnée
+* voir `session_start()` php
 
 ### Côté sokoban:
 * Amélioration de la sélection de niveau:
