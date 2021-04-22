@@ -18,14 +18,7 @@ function loginVerif() {
 // fonction de vérification pour le formulaire d'inscription
 
 function verifRegister() {
-
-    
-
-// Définition de variables
-
-
 // Vérification du remplissage des champs 
-   
     if (pseudoRegister.value === "") {
         alert("Vous avez oublié de renseigner un pseudo");
         return false;
@@ -52,7 +45,7 @@ function verifRegister() {
     };
  
 
-}
+};
 
 // informations relatives à l'inscription
 
@@ -60,7 +53,6 @@ var pseudoRegister = document.getElementById("pseudoEntry");
 var emailRegister = document.getElementById("emailEntry");
 var psswdRegister = document.getElementById("psswdEntry");
 var confirmPsswdRegister = document.getElementById("psswdAgain");
-// var btn = document.getElementById("connectionBtn");
 
 // informations relatives à la connexion
 
