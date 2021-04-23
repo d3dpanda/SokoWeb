@@ -14,6 +14,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Suppression des doublons dans la base de données  
 * Enregistrement des niveaux du joueur dans la base de donnée
 * voir `session_start()` php
+* Corriger le bug de style dans le DOM
 
 ### Côté sokoban:
 * Amélioration de la sélection de niveau:
@@ -58,8 +59,13 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 #### Le 22/04
 * Comparaison des données de la base de donnée à celles envoyées par le formulaire [login.php](login/login.php) et [bdd_login.php](login/bdd_login.php)
-* Ajout d'une page d'acceuil [index.html](index.html)
+* Ajout d'une page d'acceuil [index.html](index.html) 
 * modification du [fichier css](Sokoban/css/styles.css)
+
+#### Le 23/04
+* Vérification de l'adresse mail valide ou pas 
+* Tests de modifications de messages d'erreurs si informations mal renseignées
+* Ajout de la colonne `score` dans la bdd
 
 ### Steven
 
