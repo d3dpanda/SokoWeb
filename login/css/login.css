@@ -2,6 +2,14 @@ body{
    /* background-color:#a7270b;*/
     background: linear-gradient(to right,#EA37F5, #37F5D5);
 }
+.pseudoNoValide, .emailNoValide, .mdpNoSame{
+    background-color: #F37394;
+    font-size:13px;
+    padding:5px;
+    border:2px ridge red;
+    border-radius: 20px;
+}
+
 
 div#content{
     margin-top:100px;
