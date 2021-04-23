@@ -18,17 +18,23 @@ function loginVerif() {
 
 
 
-
+// Vérification mail
+function emailInvalid() {
+    emailInvalid.style.display = "block";
+}
 // fonction de vérification pour le formulaire d'inscription
+
 
 function verifRegister() {
 // Vérification du remplissage des champs 
     if (pseudoRegister.value === "") {
 //       alert("Vous avez oublié de renseigner un pseudo");
+        pseudoInvalid.style.display = "block";
         return false;
     }
     else if (emailRegister.value === "") {
-        alert("Vous avez oublié de renseigner une adresse mail valide");
+//        alert("Vous avez oublié de renseigner une adresse mail valide");
+        emailNoValide.style.display ="block";
         return false;
     }
     else if (psswdRegister.value === "") {
@@ -40,7 +46,8 @@ function verifRegister() {
         return false;
     }
     else if (confirmPsswdRegister.value !== psswdRegister.value) {
-        alert("Les deux mots de passe ne correspondent pas");
+    //    alert("Les deux mots de passe ne correspondent pas");
+        psswdDiff.style.display = "block";
         return false;
     }
 
@@ -58,10 +65,15 @@ var emailRegister = document.getElementById("emailEntry");
 var psswdRegister = document.getElementById("psswdEntry");
 var confirmPsswdRegister = document.getElementById("psswdAgain");
 
+
 // Variables de message d'erreur
-var pseudoInvalid = document.getElementsByClassName("pseudoNoValide");
-var emailNoValide = document.getElementsByClassName("emailNoValide");
-var psswdDiff = document.getElementsByClassName("mdpNoSame");
+var pseudoInvalid = document.getElementById("pseudoNoValide");
+var emailNoValide = document.getElementById("emailNoValide");
+var psswdDiff = document.getElementById("mdpNoSame");
+
+document.getElementById("pseudoNoValide").style.display = "none";
+document.getElementById("emailNoValide").style.display = "none";
+document.getElementById("mdpNoSame").style.display = "none";
 
 // informations relatives à la connexion
 

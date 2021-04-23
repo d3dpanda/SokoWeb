@@ -5,13 +5,12 @@
 
     include 'bdd.php';
     include 'register.php';
-    include 'BDDVerif.php';
 // Enregistrement des informations dans la table lors de la première connexcion
 
     $pseudo = $_POST['pseudo'];
     $email =  $_POST['email'];
     $mdp = $_POST['password'];
-    
+
 // Vérification de l'adresse mail
     if ( preg_match ( " /^.+@.+\.[a-zA-Z]{2,}$/ " , $email ) ) {
 // Si l'adresse mail est valide, insérer les éléments dans la table
@@ -21,8 +20,9 @@
         header("Location: ../Sokoban/Sokoban.html");    
     }
 // Sinon rafraîchir la page
-    else header("Location: register.php");
-
+    else{
+        header
+        echo "<script> emailInvalid();</script>";
   
 ?>
 
