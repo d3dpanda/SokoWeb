@@ -1,0 +1,47 @@
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Sokoban</title>
+	<meta name="description" content="Jeu Sokoban">
+	<meta name="auteur" content="Clément et Steven">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+	<h1> Sokoban </h1>	
+	<table id="tbltableau"></table>
+<p><strong>Niveau de difficulté:</strong></p>
+<p>Facile:</p>
+<select name="lvl" id="Choixdulvl">
+    <option  value="0" onclick="">Choisissez un niveau</option>
+    <option value="1" onclick="window.location='niveau1.html'">Niveau-1</option>
+    <option value="2" onclick="window.location='niveau2.html'">Niveau-2</option>
+    
+</select>
+<p>Normal:</p>
+<select name="lvl" id="Choixdulvl">
+    <option  value="0" onclick="">Choisissez un niveau</option>
+    <option value="1" onclick="window.location='niveau1.html'">Niveau-1</option>
+    <option value="2" onclick="window.location='niveau2.html'">Niveau-2</option>
+    
+</select>
+</select>
+<p>Difficile:</p>
+<select name="lvl" id="Choixdulvl">
+    <option  value="0" onclick="">Choisissez un niveau</option>
+    <option value="1" onclick="window.location='NiveauDifficile1.html'">Niveau-1</option>
+    <option value="2" onclick="window.location='niveau2.html'">Niveau-2</option>
+    
+</select>
+</select>
+<p>Impossible:</p>
+<select name="lvl" id="Choixdulvl">
+    <option  value="0" onclick="">Choisissez un niveau</option>
+    <option value="1" onclick="window.location='niveau1.html'">Niveau-1</option>
+    <option value="2" onclick="window.location='niveau2.html'">Niveau-2</option>
+    
+</select>
+</body>
+
+</html>
