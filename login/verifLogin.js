@@ -15,12 +15,16 @@ function loginVerif() {
     }
 };
 
+
+
+
+
 // fonction de vérification pour le formulaire d'inscription
 
 function verifRegister() {
 // Vérification du remplissage des champs 
     if (pseudoRegister.value === "") {
-        alert("Vous avez oublié de renseigner un pseudo");
+//       alert("Vous avez oublié de renseigner un pseudo");
         return false;
     }
     else if (emailRegister.value === "") {
@@ -53,6 +57,11 @@ var pseudoRegister = document.getElementById("pseudoEntry");
 var emailRegister = document.getElementById("emailEntry");
 var psswdRegister = document.getElementById("psswdEntry");
 var confirmPsswdRegister = document.getElementById("psswdAgain");
+
+// Variables de message d'erreur
+var pseudoInvalid = document.getElementsByClassName("pseudoNoValide");
+var emailNoValide = document.getElementsByClassName("emailNoValide");
+var psswdDiff = document.getElementsByClassName("mdpNoSame");
 
 // informations relatives à la connexion
 
