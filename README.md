@@ -99,6 +99,6 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Création d'un choix de niveau "Brut" temporaire pour avoir un choix de niveau et un sokoban qui fonctionne
 
 #### Le 23 et 24/04:
-* Création de la [sélèction de niveau](Sokoban/SokoBrut.html) d'une deuxième façons.
-* Création d'un niveau [Facile "2"](Sokoban/Niveau2.html)
-* Création d'un niveau [Difficile "1"](Sokoban/NiveauDifficile.html)
+* Création de la [sélèction de niveau](Sokoban/SokoBrut/SokoBrut.html) d'une deuxième façons.
+* Création d'un niveau [Facile "2"](Sokoban/SokoBrut/Niveau2.html)
+* Création d'un niveau [Difficile "1"](Sokoban/SokoBrut/NiveauDifficile.html)
