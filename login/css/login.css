@@ -3,7 +3,7 @@ body{
     background: linear-gradient(to right,#EA37F5, #37F5D5);
 }
 /* Message d'erreur */
-#pseudoNoValide, #emailNoValide, #mdpNoSame{
+#pseudoNoValide, #emailNoValide, #mdpNoSame, #mdpNull, #mdpBisNull{
     background-color: #F37394;
     font-size:13px;
     padding:5px;
