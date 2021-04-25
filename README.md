@@ -65,7 +65,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 #### Le 23/04
 * Vérification de l'adresse mail valide ou pas 
 * Tests de modifications de messages d'erreurs si informations mal renseignées
-* Ajout de la colonne `score` dans la bdd
+* Ajout de la colonne `score` dans la bdd (valeur 0 par défaut)
 
 ### Steven
 
