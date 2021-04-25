@@ -18,8 +18,10 @@
             <input type="text" name="email" id="emailEntry" placeholder="Entrez votre adresse mail...">
             <br>
             <div id="mdpNoSame">Les mots de passes ne correspondent pas</div>
+            <div id="mdpNull"></div>
             <input type="password" name="password" id="psswdEntry" placeholder="Entrez votre mot de passe... ">
             <br>
+            <div id="mdpBisNull"></div>
             <input type="password" name="passwordbis" id="psswdAgain" placeholder="Confirmez votre mot de passe...">
             <a href="login.php">Déjà un compte ? Connectez-vous !</a>
 
