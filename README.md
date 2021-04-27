@@ -75,10 +75,10 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 #### Vacances de mars:
 * Apprentissage du javascript
-* Test de codage d’un tableau en javascript avec un peu d’htmlCode: [Création du tableau](Sokoban/Début.html)
+* Test de codage d’un tableau en javascript avec un peu d’htmlCode: [Création du tableau](Sokoban/Début.html).
 
-* Création des règles pour bouger: [Création des règles](Sokoban/regles.js)
-* Création de la victoire et de la possibilitée de bouger avec les touches du clavier: [Création de la victoire et touche du clavier](Sokoban/victoireetclavier.js)
+* Création des règles pour bouger: [Création des règles](Sokoban/regles.js).
+* Création de la victoire et de la possibilitée de bouger avec les touches du clavier: [Création de la victoire et touche du clavier](Sokoban/victoireetclavier.js).
 
 #### Le 30/03:
 * Test d'insertion d'image dans les murs, résultat non concluant.
