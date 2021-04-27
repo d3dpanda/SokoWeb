@@ -1,4 +1,5 @@
-body {background-color: white; color: black}
+body {background: linear-gradient(0.25turn,#0F4EDC, #3f87a6,#ebf8e1, #3f87a6,#0F4EDC); color: black; margin-left: 37%}
+div {margin-left: 14%}
 
 .cellMur {width:50px; height: 50px; background:orange}
 .cellSol {width:50px; height: 50px; background-color: grey}
