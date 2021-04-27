@@ -16,7 +16,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * voir `session_start()` php
 * Corriger le bug de style dans le DOM
 
-### Côté sokoban:
+### Côté Sokoban:
 * Faire fonctionner le bouton "Relancer".
 * Ajouter d'autres niveaux pour les difficultées normales et impossibles.
 * Rajouter du css pour le bien de nos yeux.
