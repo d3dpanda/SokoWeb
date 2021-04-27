@@ -71,6 +71,10 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Tests de modifications de messages d'erreurs si informations mal renseignées
 * Ajout de la colonne `score` dans la bdd (valeur 0 par défaut)
 
+##### Le 27/04:
+* Test de comparaison de donnée avec la fonction PHP `fetch()`
+* Modifications des messages d'erreurs 
+
 ### Steven
 
 #### Vacances de mars:
