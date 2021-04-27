@@ -19,11 +19,15 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 ### Côté sokoban:
 * Faire fonctionner le bouton "Relancer"
 * Ajouter d'autres niveau pour les difficultées normales et impossibles
+* Rajouter du css dans la page de sélection de niveau pour les yeux
 
 
 ## Solution retenu
 ### Clément
 * Méthode `fetch()` pour sélectionner une colonne en php
+
+### Steven
+* On peut recharger une page seulement avec la ligne `location = location` en javascript
 
 
 ## Cahier Journal de Bord
