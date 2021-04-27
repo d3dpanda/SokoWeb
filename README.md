@@ -17,8 +17,8 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Corriger le bug de style dans le DOM
 
 ### Côté sokoban:
-* Amélioration de la sélection de niveau:
-* Regler le probleme de variable global/local avec i,j et stableau
+* Faire fonctionner le bouton "Relancer"
+* Ajouter d'autres niveau pour les difficultées normales et impossibles
 
 
 ## Solution retenu
