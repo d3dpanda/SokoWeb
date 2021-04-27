@@ -18,8 +18,8 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 ### Côté sokoban:
 * Faire fonctionner le bouton "Relancer".
-* Ajouter d'autres niveau pour les difficultées normales et impossibles.
-* Rajouter du css dans la page de sélection de niveau pour le bien de nos yeux.
+* Ajouter d'autres niveaux pour les difficultées normales et impossibles.
+* Rajouter du css pour le bien de nos yeux.
 
 
 ## Solution retenu
@@ -106,3 +106,6 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Création de la [sélèction de niveau](Sokoban/sokobrut/Sokobrut.html) d'une deuxième façons.
 * Création d'un niveau [Facile "2"](Sokoban/sokobrut/niveau2.html)
 * Création d'un niveau [Difficile "1"](Sokoban/sokobrut/NiveauDifficile1.html)
+
+#### Le 27/04:
+* Probl
