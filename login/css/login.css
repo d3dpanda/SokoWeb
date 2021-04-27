@@ -6,6 +6,7 @@ body{
 #pseudoNoValide, #emailNoValide, #mdpNoSame, #mdpNull, #mdpBisNull{
     background-color: #F37394;
     font-size:13px;
+    margin:5px;
     padding:5px;
     border:2px ridge red;
     border-radius: 20px;
