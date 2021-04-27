@@ -108,4 +108,4 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Création d'un niveau [Difficile "1"](Sokoban/sokobrut/NiveauDifficile1.html)
 
 #### Le 27/04:
-* Ajout du bouton relancer mais problème, la page recharge mais ne lance pas affichage du tableau
+* Ajout du bouton relancer mais problème, la page recharge mais ne lance pas affichage du tableau, on est donc obligé d'appuyer à nouveau sur le bouton "Lancer la partie" aprés avoir appuyé sur "Relancer"
