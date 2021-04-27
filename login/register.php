@@ -18,10 +18,10 @@
             <input type="text" name="email" id="emailEntry" placeholder="Entrez votre adresse mail...">
             <br>
             <div id="mdpNoSame">Les mots de passes ne correspondent pas</div>
-            <div id="mdpNull"></div>
+            <div id="mdpNull">Entrez un mot de passe</div>
             <input type="password" name="password" id="psswdEntry" placeholder="Entrez votre mot de passe... ">
             <br>
-            <div id="mdpBisNull"></div>
+            <div id="mdpBisNull">Veuillez confirmez votre mot de passe  </div>
             <input type="password" name="passwordbis" id="psswdAgain" placeholder="Confirmez votre mot de passe...">
             <a href="login.php">Déjà un compte ? Connectez-vous !</a>
 

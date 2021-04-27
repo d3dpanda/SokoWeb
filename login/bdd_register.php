@@ -11,10 +11,14 @@
     $email =  $_POST['email'];
     $mdp = $_POST['password'];
 
-    $sql = "INSERT INTO User (pseudo, email, mdp) VALUES ('$pseudo', '$email', '$mdp') ";
+  //  $result = query("SELECT EXISTS (SELECT * FROM User WHERE pseudo='$pseudo')");
+
+    $sql = "INSERT INTO User (pseudo, email, mdp) VALUES ('".$pseudo."', '".$email."', '".$mdp."') ";
     $count =  $bdd->exec($sql); 
     sleep(2);
     header("Location: ../Sokoban/Sokoban.html");    
-  
+
+
+    
 ?>
 
