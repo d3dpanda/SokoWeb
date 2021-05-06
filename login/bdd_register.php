@@ -10,20 +10,23 @@
     $pseudo = $_POST['pseudo'];
     $email =  $_POST['email'];
     $mdp = $_POST['password'];
-
-    $result = query("SELECT EXISTS (SELECT * FROM User WHERE pseudo='$pseudo') AS test");
-    while ($line = $result -> fetch()) {
-        if ($line['test'] == 1) {
-            header("Location: login.php");
+    
+// Vérification des doublons dans la base de données
+    $results = $bdd->query("SELECT EXISTS (SELECT * FROM User WHERE pseudo='".$pseudo.") AS test;");
+    while ($content = $results->fetch()) {
+        $row = $content['pseudo'];
+        if ($row == $pseudo) {
+            header("Location: ./register.php");
         }
         else {
-            $sql = "INSERT INTO User (pseudo, email, mdp) VALUES ('".$pseudo."', '".$email."', '".$mdp."') ";
-            $count =  $bdd->exec($sql); 
-            sleep(2);
-            header("Location: ../Sokoban/Sokoban.html");    
-            
-        };
-    };
+            break;
+        }
+    }
+
+    $sql = "INSERT INTO User (pseudo, email, mdp) VALUES ('".$pseudo."', '".$email."', '".$mdp."') ";
+    $count =  $bdd->exec($sql); 
+    sleep(2);
+    header("Location: ../Sokoban/Sokoban.html");    
 
     
 ?>
