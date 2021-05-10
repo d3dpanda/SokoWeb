@@ -79,8 +79,11 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 #### Le 10/05:
 * Message d'erreur dans la base montrant que les informations sont déjà entrées
-* Abandon de la méthode `fetch()` pour le mot clé `UNIQUE` utilisé lors de la création de la table dans la bdd
+* Mot clé `UNIQUE` lors de la création de la base de donnée
 * Correction de la prise de doublons dans la bdd
+* Finition de la comparaison de doublons [bdd_register](bdd_register.php)
+* Ajout de `try` et `catch` afin de faciliter la récupération d'erreur dans le programme
+* Commande SQL "SELECT COUNT(pseudo) FROM User WHERE pseudo="[pseudo renseigné par l'utilisateur]". Renvoie un 1 si le pseudo est déjà utilisé et renvoie un 0 si il est disponible
 
 ### Steven
 
