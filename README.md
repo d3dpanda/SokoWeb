@@ -80,6 +80,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 #### Le 10/05:
 * Message d'erreur dans la base montrant que les informations sont déjà entrées
 * Abandon de la méthode `fetch()` pour le mot clé `UNIQUE` utilisé lors de la création de la table dans la bdd
+* Correction de la prise de doublons dans la bdd
 
 ### Steven
 
