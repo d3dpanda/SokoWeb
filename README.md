@@ -83,6 +83,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Finition de la comparaison de doublons [bdd_register](bdd_register.php)
 * Ajout de `try` et `catch` afin de faciliter la récupération d'erreur dans le programme
 * Commande SQL "SELECT COUNT(pseudo) FROM User WHERE pseudo="[pseudo renseigné par l'utilisateur]". Renvoie un 1 si le pseudo est déjà utilisé et renvoie un 0 si il est disponible
+* Finition de la page de connexion: lorsque l'utilisateur se connecte, vérifie les informations de la base de donnée et les informations renseignées par l'utilisateur. Si le pseudo ou le mot de passe ne correspond pas, rafraîchit la page, sinon, permet la connexion. 
 
 ### Steven
 
