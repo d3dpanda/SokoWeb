@@ -13,12 +13,17 @@
     
 // Vérification des doublons dans la base de données
 // A COMPLÉTER !!!!!!
-    
+    try{
     $sql = "INSERT INTO User (pseudo, email, mdp) VALUES ('".$pseudo."', '".$email."', '".$mdp."') ";
     $count =  $bdd->exec($sql); 
     sleep(2);
     header("Location: ../Sokoban/Sokoban.html");    
+    }
+    catch (Exception $e) {
+        echo "Erreur: ", $e -> getMessage(), "\n";
 
+    };
+    echo "test";
     
     
 ?>
