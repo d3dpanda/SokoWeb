@@ -12,8 +12,10 @@
         <form method="post" action="bdd_login.php" onsubmit="return loginVerif()" name="loginForm">
             <h1>Connexion</h1>
             <hr>
+            <div id="pseudoLoginError"></div>
             <input type="text" name="pseudo" id="pseudoEntry" placeholder="Entrez votre pseudo... ">
             <br>
+            <div id="mdpLoginError"></div>
             <input type="password" name="password" id="psswdEntry" placeholder="Entrez votre mot de passe... ">
             <br>
             <a href="register.php">Pas de compte ? Inscrivez-vous</a> 

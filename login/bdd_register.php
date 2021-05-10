@@ -28,9 +28,9 @@
         while($data = $verification->fetch()) {
             echo $data[0]."\n";
             if ($data[0] == 1) { // Si le pseudo existe déjà
-                echo "Compte existant\n";
+                echo "<script>alert('Ce pseudo n'est pas disponible')</script>\n";
                 header("Location: register.php");
-            }
+            }   
             elseif ($data[0] == 0) { // Si le pseudo n'existe pas 
                 echo "Nouveau compte crée\n"; 
                 sleep(1);

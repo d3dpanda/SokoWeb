@@ -11,18 +11,23 @@
         <form action="bdd_register.php" method="post" name="formEntry" onsubmit="return verifRegister()">
             <h1>Inscription</h1>
             <hr>
-            <div id="pseudoNoValide">Pseudo non renseigné</div>
+
+            <div id="pseudoNoValide"></div>
             <input type="text" name="pseudo" id="pseudoEntry" placeholder="Entrez votre pseudo... ">
             <br>
-            <div id="emailNoValide">Adresse mail non renseignée ou non valide</div>
+
+            <div id="emailNoValide"></div>
             <input type="text" name="email" id="emailEntry" placeholder="Entrez votre adresse mail...">
             <br>
-            <div id="mdpNoSame">Les mots de passes ne correspondent pas</div>
-            <div id="mdpNull">Entrez un mot de passe</div>
+            
+            <div id="mdpNoSame"></div>
+            <div id="mdpNull"></div>
             <input type="password" name="password" id="psswdEntry" placeholder="Entrez votre mot de passe... ">
             <br>
-            <div id="mdpBisNull">Veuillez confirmez votre mot de passe  </div>
+            
+            <div id="mdpBisNull" ></div>
             <input type="password" name="passwordbis" id="psswdAgain" placeholder="Confirmez votre mot de passe...">
+            
             <a href="login.php">Déjà un compte ? Connectez-vous !</a>
 
             <input type="submit" name="registery" id="connectionBtn" value="S'inscrire">

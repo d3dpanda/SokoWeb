@@ -11,9 +11,8 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 ## To-Do list
 ### Côté serveur:
-* Affichage des messages d'erreur avec JS
-* Enregistrement des niveaux du joueur dans la base de donnée
 * voir `session_start()` en php
+* Enregistrement des niveaux du joueur dans la base de donnée
 
 ### Côté Sokoban:
 * Faire fonctionner le bouton "Relancer".
@@ -80,10 +79,12 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Message d'erreur dans la base montrant que les informations sont déjà entrées
 * Mot clé `UNIQUE` lors de la création de la base de donnée
 * Correction de la prise de doublons dans la bdd
-* Finition de la comparaison de doublons [bdd_register](bdd_register.php)
+* Finition de la comparaison de doublons [bdd_register](login/bdd_register.php)
 * Ajout de `try` et `catch` afin de faciliter la récupération d'erreur dans le programme
 * Commande SQL "SELECT COUNT(pseudo) FROM User WHERE pseudo="[pseudo renseigné par l'utilisateur]". Renvoie un 1 si le pseudo est déjà utilisé et renvoie un 0 si il est disponible
 * Finition de la page de connexion: lorsque l'utilisateur se connecte, vérifie les informations de la base de donnée et les informations renseignées par l'utilisateur. Si le pseudo ou le mot de passe ne correspond pas, rafraîchit la page, sinon, permet la connexion. 
+* Le système d'inscription et de connexion sont fonctionnels [Page d'inscription](login/register.php) / [page de connexion](login/login.php)
+* Ajout des messages d'erreur lors de l'inscription et de la connexion de l'utilisateur
 
 ### Steven
 

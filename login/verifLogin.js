@@ -2,11 +2,13 @@
 
 function loginVerif() {
     if (pseudoVerif.value === "") {
-        alert("Vous avez oublié de renseigner un pseudo");
+//        alert("Vous avez oublié de renseigner un pseudo");
+        pseudoLoginError.innerHTML = "<p class='pseudoLoginErreur'>Aucun compte n'a été trouvé</p>"
         return false;
     }
     else if (passVerif.value === "") {
-        alert("Veuillez renseigner votre mot de passe");
+// alert("Veuillez renseigner votre mot de passe");
+        mdpLoginError.innerHTML = "<p class='mdpLoginErreur'>Le mot de passe est incorrect</p>";
         return false;
     }
     else {
@@ -23,27 +25,37 @@ function loginVerif() {
 function verifRegister() {
 // Vérification du remplissage des champs 
     if (pseudoRegister.value === "") {
-        alert("Vous avez oublié de renseigner un pseudo");
-
+//        alert("Vous avez oublié de renseigner un pseudo");
+        pseudoError.innerHTML = "<p class='pseudoErreur'>Pseudo non renseigné</p>";
         return false;
     }
     else if (emailRegister.value === "" ){
-        alert("Vous avez oublié de renseigner une adresse mail valide");
+//        alert("Vous avez oublié de renseigner une adresse mail valide");
+        emailError.innerHTML = "<p class='emailErreur'>Adresse mail non renseignée ou non valide</p>";
         return false;
     }
     else if (psswdRegister.value === "") {
-        alert("Vous avez oublié de renseigner un mot de passe ");
+//        alert("Vous avez oublié de renseigner un mot de passe ");
+        mdpError.innerHTML = "<p class='mdpErreur'>Entrez un mot de passe</p>";
         return false;
     }
     else if (confirmPsswdRegister.value ==="") {
-        alert("Vous n'avez pas confirmé votre mot de passe");
+//        alert("Vous n'avez pas confirmé votre mot de passe");
+        mdpBisError.innerHTML = "<p class='mdpBisErreur'>Veuillez confirmez votre mot de passe</p>";
         return false;
     }
     else if (confirmPsswdRegister.value !== psswdRegister.value) {
-        alert("Les deux mots de passe ne correspondent pas");
+//        alert("Les deux mots de passe ne correspondent pas");
+        mdpConfirmError.innerHTML = "<p class='mdpConfirmErreur'>Les mots de passes ne correspondent pas</p>";
         return false;
     }
     else{
+        pseudoError.innerHTML = " ";
+        emailError.innerHTML = " ";
+        mdpError.innerHTML = " ";
+        mdpBisError.innerHTML = " ";
+        mdpConfirmError.innerHTML = " "; 
+
         document.formEntry.submit();
     };
  
@@ -65,3 +77,12 @@ var confirmPsswdRegister = document.getElementById("psswdAgain");
 
 var pseudoVerif = document.getElementById("pseudoEntry");
 var passVerif = document.getElementById("psswdEntry");
+// Message d'erreur formulaire d'inscription
+var pseudoError = document.getElementById("pseudoNoValide");
+var emailError = document.getElementById("emailNoValide");
+var mdpError = document.getElementById("mdpNull");
+var mdpBisError = document.getElementById("mdpBisNull");
+var mdpConfirmError = document.getElementById("mdpNoSame");
+// Message d'erreur formulaire connexion
+var pseudoLoginError = document.getElementById("pseudoLoginError");
+var mdpLoginError = document.getElementById("mdpLoginError");
