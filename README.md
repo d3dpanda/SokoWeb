@@ -77,6 +77,10 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 #### Le 6/05:
 * Test de comparaison entre la tables et les informations entrées 
 
+#### Le 10/05:
+* Message d'erreur dans la base montrant que les informations sont déjà entrées
+* Abandon de la méthode `fetch()` pour le mot clé `UNIQUE` utilisé lors de la création de la table dans la bdd
+
 ### Steven
 
 #### Vacances de mars:
