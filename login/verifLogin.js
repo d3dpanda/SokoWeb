@@ -1,4 +1,3 @@
-
 // fonction de vérification pour le formulaire de connexion "si vide, alors..."
 
 function loginVerif() {
@@ -25,6 +24,7 @@ function verifRegister() {
 // Vérification du remplissage des champs 
     if (pseudoRegister.value === "") {
         alert("Vous avez oublié de renseigner un pseudo");
+
         return false;
     }
     else if (emailRegister.value === "" ){
@@ -47,7 +47,7 @@ function verifRegister() {
         document.formEntry.submit();
     };
  
-
+   
 };
 
 // informations relatives à l'inscription
