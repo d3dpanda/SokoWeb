@@ -11,10 +11,9 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 ## To-Do list
 ### Côté serveur:
-* Suppression des doublons dans la base de données  
+* Affichage des messages d'erreur avec JS
 * Enregistrement des niveaux du joueur dans la base de donnée
-* voir `session_start()` php
-* Corriger le bug de style dans le DOM
+* voir `session_start()` en php
 
 ### Côté Sokoban:
 * Faire fonctionner le bouton "Relancer".
