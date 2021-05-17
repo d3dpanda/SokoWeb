@@ -121,3 +121,9 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 #### Le 27/04:
 * Ajout du bouton relancer mais problème, la page recharge mais ne lance pas affichage du tableau, on est donc obligé d'appuyer à nouveau sur le bouton "Lancer la partie" aprés avoir appuyé sur "Relancer"
 * Mise à jour du [script css](Sokoban/sokobrut/css/style.css)
+
+#### Le 4/05/2021:
+* Finition, simplification des programmes
+
+#### Le 15/05/2021:
+* Création d'un niveau impossible "personnalisé" (fait à la main)
