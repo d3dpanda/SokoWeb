@@ -1,5 +1,5 @@
 <?php  session_start();
-    $_SESSION["a1"] = "LOGGED";
+    $_SESSION["a1"] = 0;
     
 
     echo $_SESSION["a1"].PHP_EOL;
