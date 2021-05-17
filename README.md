@@ -86,6 +86,10 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * Le système d'inscription et de connexion sont fonctionnels [Page d'inscription](login/register.php) / [page de connexion](login/login.php)
 * Ajout des messages d'erreur lors de l'inscription et de la connexion de l'utilisateur
 
+#### Le 17/05:
+* Apprentissage des sessions en php, avec `session_start()`
+
+
 ### Steven
 
 #### Vacances de mars:

@@ -1,3 +1,13 @@
+<?php
+	include 'session.php';
+
+?>
+
+<!-- 
+-------------------------
+	NE FAIS PAS ATTENTION À CE PROGRAMME, C'EST POUR QUE JE PUISSE TRAVAILLER SUR LES SESSIONS 
+-------------------------
+-->
 
 <!DOCTYPE html>
 <html lang="fr">
