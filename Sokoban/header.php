@@ -1,10 +1,12 @@
 <?php
      session_start();
 
-// Récupération de l'id de session
+// Récupération de l'id de session de bdd_register.php
 
-     $id_session = session_id();
-    
+     echo $_SESSION["pseudo"]."<br>".$_SESSION["email"]."<br>".$_SESSION["idSession"];
+      
+
+
 ?>
 
 <!DOCTYPE html>
@@ -15,14 +17,17 @@
 <body>
 <?php
 // Si l'id de connexion est récupéré, l'affiché
-    if ($id_session) {
-        echo "ID de session récupéré: <br> ".$id_session;
+    try{
+        if ($id_session) {
+            echo "ID de session récupéré: <br> ".$id_session;
+        }
+        else { // Sinon signaler le problème
+            header("Location: ../login/login.php");
+        };
     }
-    else { // Sinon signaler le problème
-    	header("Location: ../login/login.php");
+    catch (Exception $e) {
+         die("Error: ".$e->getMessage());
     };
-    
-
 ?>
 </body>
 </html>

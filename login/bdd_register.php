@@ -1,5 +1,6 @@
-<?php // session_start();
-    //$_SESSION["a1"] = "LOGGED";
+<?php session_start();
+     $id_de_session = session_id();
+     
 
 // Importation des fichiers nécessaires 
 
@@ -7,26 +8,27 @@
     include 'bdd.php';
     include 'register.php';
 
- // Enregistrement des informations dans la table lors de la première connexcion
-//
+// Enregistrement des informations dans la table lors de la première connexcion
+
 //   $pseudo = $_POST['pseudo'];
 //   $email =  $_POST['email'];
 //   $mdp = $_POST['password'];
-//
+
 
     $pseudo = "clement";
     $email = "cleml97430@gmail.com";
     $mdp = "123abc";
 
-   // echo $pseudo.PHP_EOL.$email.PHP_EOL.$mdp;
-
+   
+   $_SESSION["pseudo"] = $pseudo;
+   $_SESSION["email] = $email;
+   $_SESSION["idSession"] = $id_de_session; 
 
 // Vérification des doublons dans la base de données
 
-//    $sql = "INSERT INTO User (pseudo, email, mdp) VALUES ('clement', 'clement@gmail.com', 'clm') ";
     $sql = "INSERT INTO User (pseudo, email, mdp) VALUES ('".$pseudo."', '".$email."', '".$mdp."') ";
 
-//  Commande SQL vérifiant la présence du pseudo dans la base de donnée.
+// Commande SQL vérifiant la présence du pseudo dans la base de donnée.
 // Si la commande renvoie 1, alors le pseudo existe déjà
 // Si la commande renvoie 0, alors le pseudo n'existe pas
     $verification = $bdd->query("SELECT COUNT(pseudo) FROM User WHERE pseudo='".$pseudo."'");
@@ -43,7 +45,7 @@
             elseif ($data[0] == 0) { // Si le pseudo n'existe pas 
                 echo "Nouveau compte crée\n"; 
                 sleep(1);
-                header("Location: ../Sokoban/Sokoban.html");
+                header("Location: ../Sokoban/Sokoban.php");
             }
         };
     }

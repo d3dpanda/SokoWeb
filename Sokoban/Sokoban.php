@@ -1,9 +1,9 @@
 <?php
      session_start();
 
-     include "../bdd_register.php";
+     include "header.php";
 
-     $_SESSION["pseudo"] = $pseudo;
+     echo "<h1>Bienvenue".$_SESSION["pseudo"]."</h1>";
      	
 ?>
 
@@ -28,7 +28,7 @@
 <body onkeyup="AppuisTouche(event)">
 <?php
 
-	$_SESSION["user_pseudo"] = $pseudo;
+	
 	$_SESSION["user_score"] = 0;
 
 ?>
