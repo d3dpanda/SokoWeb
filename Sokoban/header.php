@@ -1,10 +1,10 @@
 <?php
      session_start();
 
-     $id_session = session_id();
-     $_SESSION["pseudo"] = "pseudo1";
-     $_SESSION["score"] = 0;
+// Récupération de l'id de session
 
+     $id_session = session_id();
+    
 ?>
 
 <!DOCTYPE html>
@@ -14,13 +14,15 @@
 </head>
 <body>
 <?php
-
+// Si l'id de connexion est récupéré, l'affiché
     if ($id_session) {
         echo "ID de session récupéré: <br> ".$id_session;
     }
-    else {
-    	echo "Aucun ID de session";
+    else { // Sinon signaler le problème
+    	header("Location: ../login/login.php");
     };
     
 
 ?>
+</body>
+</html>

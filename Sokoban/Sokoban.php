@@ -1,7 +1,10 @@
 <?php
-	include 'session.php';
-	include '../login/bdd_register.php';
-	
+     session_start();
+
+     include "../bdd_register.php";
+
+     $_SESSION["pseudo"] = $pseudo;
+     	
 ?>
 
 <!-- 
@@ -26,7 +29,7 @@
 <?php
 
 	$_SESSION["user_pseudo"] = $pseudo;
-	$_SESSION["user_score"] = 
+	$_SESSION["user_score"] = 0;
 
 ?>
 	<h1> Sokoban </h1>
