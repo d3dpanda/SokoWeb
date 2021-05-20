@@ -24,6 +24,10 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 ### Clément
 * Méthode `fetch()` pour sélectionner une colonne en php
 * `session_start()`, `unset()`pour commencer et arrêter une session en php
+* `session_id()` pour récupérer un identifiant de session
+* utilisation des variables de sessions
+* `require()`permet d'arrêter l'exécution du script lorsqu'une erreur est rencontrée, alors que `include()` continue l'exécution
+
 
 ### Steven
 * On peut recharger une page seulement avec la ligne `location = location` en javascript
@@ -93,7 +97,8 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 #### Le 20/05: 
 * essais des sessions en php, avec affichage du pseudo, du score et de l'email de l'utilisateur 
-* 
+* ajout des id de sessions avec la fonction `session_id()`
+* transfert des données utilisateurs avec les sessions avec les variables de sessions `$_SESSION["nomDeLaVariableDeSession"] = $variable`
 
 ### Steven
 
