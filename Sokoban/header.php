@@ -2,9 +2,8 @@
      session_start();
 
 // Récupération de l'id de session de bdd_register.php
-
-     echo $_SESSION["pseudo"]."<br>".$_SESSION["email"]."<br>".$_SESSION["idSession"];
-      
+     include "../login/bdd_register.php"; 
+     include "../login/bdd_login.php";    
 
 
 ?>
@@ -18,8 +17,8 @@
 <?php
 // Si l'id de connexion est récupéré, l'affiché
     try{
-        if ($id_session) {
-            echo "ID de session récupéré: <br> ".$id_session;
+        if ($id_de_session) {
+            $_SESSION["session"] = TRUE;
         }
         else { // Sinon signaler le problème
             header("Location: ../login/login.php");

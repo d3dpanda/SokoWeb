@@ -1,5 +1,5 @@
-<?php session_start();
-     $id_de_session = session_id();
+<?php  session_start();
+      $id_de_session = session_id();
      
 
 // Importation des fichiers nécessaires 
@@ -7,21 +7,19 @@
 
     include 'bdd.php';
     include 'register.php';
-
 // Enregistrement des informations dans la table lors de la première connexcion
 
-//   $pseudo = $_POST['pseudo'];
-//   $email =  $_POST['email'];
-//   $mdp = $_POST['password'];
+   $pseudo = $_POST['pseudo'];
+   $email =  $_POST['email'];
+   $mdp = $_POST['password'];
 
 
-    $pseudo = "clement";
-    $email = "cleml97430@gmail.com";
-    $mdp = "123abc";
-
+//    $pseudo = "clement";
+//    $email = "cleml97430@gmail.com";
+//    $mdp = "123abc";
    
    $_SESSION["pseudo"] = $pseudo;
-   $_SESSION["email] = $email;
+   $_SESSION["email"] = $email;
    $_SESSION["idSession"] = $id_de_session; 
 
 // Vérification des doublons dans la base de données
@@ -31,6 +29,7 @@
 // Commande SQL vérifiant la présence du pseudo dans la base de donnée.
 // Si la commande renvoie 1, alors le pseudo existe déjà
 // Si la commande renvoie 0, alors le pseudo n'existe pas
+
     $verification = $bdd->query("SELECT COUNT(pseudo) FROM User WHERE pseudo='".$pseudo."'");
    
     $count =  $bdd->exec($sql); 
