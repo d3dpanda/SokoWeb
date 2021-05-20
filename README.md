@@ -23,6 +23,7 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 ## Solution retenu
 ### Clément
 * Méthode `fetch()` pour sélectionner une colonne en php
+* `session_start()`, `unset()`pour commencer et arrêter une session en php
 
 ### Steven
 * On peut recharger une page seulement avec la ligne `location = location` en javascript
@@ -88,7 +89,11 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 
 #### Le 17/05:
 * Apprentissage des sessions en php, avec `session_start()`
+* Ajout des fichiers tests [session.php](Sokoban/session.php) et conversion en php du fichier [Sokoban.html](Sokoban/Sokoban.html) en [Sokoban.php](Sokoban/Sokoban.php)
 
+#### Le 20/05: 
+* essais des sessions en php, avec affichage du pseudo, du score et de l'email de l'utilisateur 
+* 
 
 ### Steven
 

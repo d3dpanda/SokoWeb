@@ -3,20 +3,22 @@
 
     $pseudo = "clement";
     $email = "cleml97430@gmail.com";
-    $mdp = "123";
+    $score = 0;
 
     $_SESSION["a1"] = 1;
     $_SESSION["pseudo"] = $pseudo;
-    $_SESSION["mdp"] = $mdp;
+    $_SESSION["score"] = $score;
     $_SESSION["email"] = $email;   
     try{
-        echo $_SESSION["a1"].PHP_EOL;
+        echo "Valeur de la session: ".$_SESSION["a1"].PHP_EOL;
+        echo "Status de la session: ".session_status().PHP_EOL;
 // OUTPUT = "LOGGED"
 
-        echo $_SESSION["pseudo"].PHP_EOL;
+        echo "Pseudo de l'utilisateur: ".$_SESSION["pseudo"].PHP_EOL;
 // OUTPUT = "Clement"
         
-        echo $_SESSION["mdp"].PHP_EOL;
+        echo "Score de l'utilisateur: ".$_SESSION["score"].PHP_EOL;
+// OUTPUT = Score de l'utilisateur
     }
     catch (Exception $e){
         echo("Error : ".$e);
