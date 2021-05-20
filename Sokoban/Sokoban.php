@@ -1,6 +1,7 @@
 <?php
 	include 'session.php';
-
+	include '../login/bdd_register.php';
+	
 ?>
 
 <!-- 
@@ -22,6 +23,12 @@
 
 </head>
 <body onkeyup="AppuisTouche(event)">
+<?php
+
+	$_SESSION["user_pseudo"] = $pseudo;
+	$_SESSION["user_score"] = 
+
+?>
 	<h1> Sokoban </h1>
 	<div><h3>Nombre de pas:<span id="Compteurdepas">0</span></div></h3>
 

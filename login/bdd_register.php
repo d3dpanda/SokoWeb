@@ -1,4 +1,5 @@
-<?php
+<?php // session_start();
+    //$_SESSION["a1"] = "LOGGED";
 
 // Importation des fichiers nécessaires 
 
@@ -7,11 +8,19 @@
     include 'register.php';
 
  // Enregistrement des informations dans la table lors de la première connexcion
+//
+//   $pseudo = $_POST['pseudo'];
+//   $email =  $_POST['email'];
+//   $mdp = $_POST['password'];
+//
 
-   $pseudo = $_POST['pseudo'];
-   $email =  $_POST['email'];
-   $mdp = $_POST['password'];
-    
+    $pseudo = "clement";
+    $email = "cleml97430@gmail.com";
+    $mdp = "123abc";
+
+   // echo $pseudo.PHP_EOL.$email.PHP_EOL.$mdp;
+
+
 // Vérification des doublons dans la base de données
 
 //    $sql = "INSERT INTO User (pseudo, email, mdp) VALUES ('clement', 'clement@gmail.com', 'clm') ";
@@ -44,4 +53,6 @@
     }
     
 ?>
+
+
 
