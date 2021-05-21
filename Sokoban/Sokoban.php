@@ -1,6 +1,5 @@
 <?php
      session_start();
-     $id_session = session_id();
      require "header.php";
 
      echo "<h1>Bienvenue ".$_SESSION['pseudo']."</h1>";

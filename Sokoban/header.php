@@ -15,8 +15,8 @@
 <body>
 <?php
 // Si l'id de connexion est récupéré, l'affiché
-   try{
-        if ($_SESSION['id']) {
+    try{
+        if ($_SESSION['id'] != "") {
             $_SESSION["session"] = TRUE;
         }
         else { // Sinon signaler le problème
