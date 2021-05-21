@@ -1,6 +1,6 @@
-<?php  session_start();
-      $id_de_session = session_id();
-     
+<?php session_start();
+    $id_de_session = session_id();
+    $_SESSION['id'] = $_GET[$id_de_session];
 
 // Importation des fichiers nécessaires 
 
@@ -9,18 +9,18 @@
     include 'register.php';
 // Enregistrement des informations dans la table lors de la première connexcion
 
-   $pseudo = $_POST['pseudo'];
-   $email =  $_POST['email'];
-   $mdp = $_POST['password'];
+  $pseudo = $_POST['pseudo'];
+  $email =  $_POST['email'];
+  $mdp = $_POST['password'];
 
 
-//    $pseudo = "clement";
-//    $email = "cleml97430@gmail.com";
-//    $mdp = "123abc";
+ //   $pseudo = "clement";
+ //   $email = "cleml97430@gmail.com";
+ //   $mdp = "123abc";
    
-   $_SESSION["pseudo"] = $pseudo;
-   $_SESSION["email"] = $email;
-   $_SESSION["idSession"] = $id_de_session; 
+   // $_SESSION["pseudo"] = $pseudo;
+   // $_SESSION["email"] = $email;
+   // $_SESSION["idSession"] = $id_de_session; 
 
 // Vérification des doublons dans la base de données
 
@@ -38,8 +38,11 @@
         while($data = $verification->fetch()) {
             echo $data[0]."\n";
             if ($data[0] == 1) { // Si le pseudo existe déjà
-                echo "<script>alert('Ce pseudo n'est pas disponible')</script>\n";
+                //echo "<script>alert('Ce pseudo n'est pas disponible')</script>\n";
+                $_SESSION = array();
+                session_destroy();
                 header("Location: register.php");
+                
             }   
             elseif ($data[0] == 0) { // Si le pseudo n'existe pas 
                 echo "Nouveau compte crée\n"; 

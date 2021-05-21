@@ -1,9 +1,7 @@
 <?php
-     session_start();
-
+    session_start();
+    echo $_SESSION['id'];
 // Récupération de l'id de session de bdd_register.php
-     include "../login/bdd_register.php"; 
-     include "../login/bdd_login.php";    
 
 
 ?>
@@ -16,7 +14,7 @@
 <body>
 <?php
 // Si l'id de connexion est récupéré, l'affiché
-    try{
+/*    try{
         if ($id_de_session) {
             $_SESSION["session"] = TRUE;
         }
@@ -27,6 +25,8 @@
     catch (Exception $e) {
          die("Error: ".$e->getMessage());
     };
-?>
+*/
+    ?>
+
 </body>
 </html>
