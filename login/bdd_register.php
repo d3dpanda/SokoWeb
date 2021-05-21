@@ -18,10 +18,9 @@
  //   $email = "cleml97430@gmail.com";
  //   $mdp = "123abc";
    
-   // $_SESSION["pseudo"] = $pseudo;
-   // $_SESSION["email"] = $email;
-   // $_SESSION["idSession"] = $id_de_session; 
-
+    $_SESSION["pseudo"] = $pseudo;
+    $_SESSION["email"] = $email;
+    
 // Vérification des doublons dans la base de données
 
     $sql = "INSERT INTO User (pseudo, email, mdp) VALUES ('".$pseudo."', '".$email."', '".$mdp."') ";
@@ -31,7 +30,7 @@
 // Si la commande renvoie 0, alors le pseudo n'existe pas
 
     $verification = $bdd->query("SELECT COUNT(pseudo) FROM User WHERE pseudo='".$pseudo."'");
-   
+    $scoreUser = $bdd->query("SELECT score FROM User WHERE pseudo ='".$pseudo."';");
     $count =  $bdd->exec($sql); 
 // essai de la sélection de la colonne pseudo, avec le pseudo renseigné par l'utilisateur
     try{
@@ -49,7 +48,12 @@
                 sleep(1);
                 header("Location: ../Sokoban/Sokoban.php");
             }
+        
+        
         };
+        while ($scoreDuJoueur = $score->fetch()) {
+            $_SESSION['score'] = $scoreDuJoueur;
+        }
     }
 // Si le test ne marche pas, renvoie un message d'erreur et arrête l'exécution du programme
     catch (Exception $e) {

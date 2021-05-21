@@ -3,8 +3,8 @@
      $id_session = session_id();
      require "header.php";
 
-     echo "<h1>Bienvenue".$_SESSION['pseudo']."</h1>";
-     	
+     echo "<h1>Bienvenue ".$_SESSION['pseudo']."</h1>";
+    
 ?>
 
 <!-- 
@@ -34,7 +34,7 @@
 ?>
 	<h1> Sokoban </h1>
 	<div><h3>Nombre de pas:<span id="Compteurdepas">0</span></div></h3>
-
+	<div class="score">Votre score: <?php echo </div>
 	<button onclick="printtableau()">Lancer la partie</button>
 	
 	<table id="tbltableau"></table>
