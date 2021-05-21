@@ -27,12 +27,7 @@
 
 </head>
 <body onkeyup="AppuisTouche(event)">
-<?php
 
-	
-	$_SESSION["user_score"] = 0;
-
-?>
 	<h1> Sokoban </h1>
 	<a class="logOutLink" href="php_session_abort.php">Se déconnecter</a>
 	<div><h3>Nombre de pas:<span id="Compteurdepas">0</span></div></h3>
@@ -153,7 +148,9 @@ function VictoireOuPas() {
 			if (laCell.type == Objectif && laCell.ElementduJeu != Boite) laVictoire = false;
 		}
 	}
-	if (laVictoire) alert("Bravo, vous avez réussi ce niveau")
+	if (laVictoire) {
+		window.location = "score.php"; 
+	}
 }
 function AppuisTouche(event) {
 	//console.log(event);

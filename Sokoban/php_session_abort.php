@@ -1,7 +1,10 @@
 <?php 
     session_start();
     $_SESSION = array();
+    echo "<h1>Vous êtes à présent déconnecter ! Au revoir !! </h1>";
+    echo "<a href='../login/login.php'>Revenir à la page de connexion</a>";
     session_destroy();
+
 
 ?>
 <!DOCTYPE html>
@@ -13,6 +16,5 @@
     <title>Déconnexion</title>
 </head>
 <body>
-    <h1>Vous êtes à présent déconnecter ! Au revoir !! </h1>
 </body>
 </html>
