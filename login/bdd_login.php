@@ -1,6 +1,7 @@
 <?php session_start(); 
-     $id_de_session = session_id();
-// Importations des différents fichiers nécessaires
+    $id_de_session = session_id();
+    $_SESSION['id'] = $id_de_session;
+     // Importations des différents fichiers nécessaires
 
     include 'login.php';
     include 'bdd.php';
@@ -11,7 +12,7 @@
     $pass = $_POST['password'];
     $_SESSION["pseudo"] = $pseudo;
     $_SESSION["mdp"] = $mdp;
-    $_SESSION["idDeSess"] = $id_session;
+    
 // Ajout de la commande SQL sélectionnant le mot de passe selon l'utilisateur  
     echo "--------------------------------------------------\n";
     try{
