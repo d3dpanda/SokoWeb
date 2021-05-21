@@ -15,7 +15,9 @@ body {
   height: 50px; 
   background-color: grey
 }
-
+.logOutLink{
+  color:black;
+}
 
 .cellObjectif {
   width:50px; 

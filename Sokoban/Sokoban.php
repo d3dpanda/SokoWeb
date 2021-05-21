@@ -1,7 +1,9 @@
 <?php
      session_start();
      require "header.php";
-
+	function logOut() {
+		header("Location: php_session_abort.php");
+	};
      echo "<h1>Bienvenue ".$_SESSION['pseudo']."</h1>";
     
 ?>
@@ -32,6 +34,7 @@
 
 ?>
 	<h1> Sokoban </h1>
+	<a class="logOutLink" href="php_session_abort.php">Se déconnecter</a>
 	<div><h3>Nombre de pas:<span id="Compteurdepas">0</span></div></h3>
 	<div class="score">Votre score: <?php echo $_SESSION["user_score"]; ?></div>
 	<button onclick="printtableau()">Lancer la partie</button>
