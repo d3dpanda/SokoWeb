@@ -15,8 +15,8 @@
 <body>
 <?php
 // Si l'id de connexion est récupéré, l'affiché
-/*    try{
-        if ($id_de_session) {
+   try{
+        if ($_SESSION['id']) {
             $_SESSION["session"] = TRUE;
         }
         else { // Sinon signaler le problème
@@ -26,7 +26,7 @@
     catch (Exception $e) {
          die("Error: ".$e->getMessage());
     };
-*/
+
     ?>
 
 </body>

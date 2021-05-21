@@ -1,6 +1,6 @@
 <?php session_start();
     $id_de_session = session_id();
-    $_SESSION['id'] = $_GET[$id_de_session];
+    $_SESSION['id'] = $id_de_session;
 
 // Importation des fichiers nécessaires 
 

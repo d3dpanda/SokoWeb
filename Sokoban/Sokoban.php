@@ -34,7 +34,7 @@
 ?>
 	<h1> Sokoban </h1>
 	<div><h3>Nombre de pas:<span id="Compteurdepas">0</span></div></h3>
-	<div class="score">Votre score: <?php echo </div>
+	<div class="score">Votre score: <?php echo $_SESSION["user_score"]; ?></div>
 	<button onclick="printtableau()">Lancer la partie</button>
 	
 	<table id="tbltableau"></table>
