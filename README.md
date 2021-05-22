@@ -100,6 +100,11 @@ Afin de pouvoir jouer, l'utilisateur doit se créer un compte en y renseignant u
 * ajout des id de sessions avec la fonction `session_id()`
 * transfert des données utilisateurs avec les sessions avec les variables de sessions `$_SESSION["nomDeLaVariableDeSession"] = $variable`
 
+#### Le 21/05:
+* Finition de la mise en place des sessions 
+* Affichage du pseudo de l'utilisateur sur la page de jeu 
+
+
 ### Steven
 
 #### Vacances de mars:

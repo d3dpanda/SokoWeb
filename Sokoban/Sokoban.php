@@ -1,11 +1,15 @@
 <?php
      session_start();
+	 include "../login/bdd.php";
      require "header.php";
 	function logOut() {
 		header("Location: php_session_abort.php");
 	};
-     echo "<h1>Bienvenue ".$_SESSION['pseudo']."</h1>";
-    
+    echo "<h1>Bienvenue ".$_SESSION['pseudo']."</h1>";
+	$scoreUser = $bdd->query("SELECT score FROM User WHERE pseudo ='".$_SESSION['pseudo']."';");
+	while ($scoreDuJoueur = $score->fetch()) {
+		$_SESSION['score'] = $scoreDuJoueur;
+	};
 ?>
 
 <!-- 

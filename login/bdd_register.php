@@ -30,7 +30,6 @@
 // Si la commande renvoie 0, alors le pseudo n'existe pas
 
     $verification = $bdd->query("SELECT COUNT(pseudo) FROM User WHERE pseudo='".$pseudo."'");
-    $scoreUser = $bdd->query("SELECT score FROM User WHERE pseudo ='".$pseudo."';");
     $count =  $bdd->exec($sql); 
 // essai de la sélection de la colonne pseudo, avec le pseudo renseigné par l'utilisateur
     try{
@@ -51,9 +50,7 @@
         
         
         };
-        while ($scoreDuJoueur = $score->fetch()) {
-            $_SESSION['score'] = $scoreDuJoueur;
-        }
+       
     }
 // Si le test ne marche pas, renvoie un message d'erreur et arrête l'exécution du programme
     catch (Exception $e) {

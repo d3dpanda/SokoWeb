@@ -6,6 +6,7 @@ CREATE TABLE User (
     email VARCHAR (120) NOT NULL UNIQUE,
     mdp VARCHAR(120) NOT NULL,
     score INTEGER DEFAULT 0,
+    lvl INTEGER DEFAULT 0,
     PRIMARY KEY(id)); 
 
 --####################
