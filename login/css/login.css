@@ -1,6 +1,7 @@
 body{
    /* background-color:#a7270b;*/
-    background: linear-gradient(to right,#EA37F5, #37F5D5);
+ /*   background: linear-gradient(to right,#EA37F5, #37F5D5);*/
+    background:linear-gradient(to right, #102487, #556FF2 )
 }
 /* Message d'erreur */
 .pseudoErreur, .emailErreur, .mdpErreur, .mdpBisErreur, .mdpConfirmErreur, .pseudoLoginErreur, .mdpLoginErreur{

@@ -1,14 +1,15 @@
 <?php
-     session_start();
-	 include "../login/bdd.php";
-     require "header.php";
-	function logOut() {
-		header("Location: php_session_abort.php");
-	};
-    echo "<h1>Bienvenue ".$_SESSION['pseudo']."</h1>";
-	$scoreUser = $bdd->query("SELECT score FROM User WHERE pseudo ='".$_SESSION['pseudo']."';");
-	while ($scoreDuJoueur = $score->fetch()) {
+	session_start();
+	include "../login/bdd.php";
+	require "header.php";
+	$pseudo = $_SESSION['pseudo'];
+
+    echo "<h1>Bienvenue ".$pseudo."</h1>";
+// Sélection du score du joueur par rapport à son pseudo
+	$scoreUser = $bdd->query("SELECT score FROM User WHERE pseudo ='".$pseudo."'");
+	while ($scoreDuJoueur = $scoreUser->fetch()) { // Sélection de la donnée
 		$_SESSION['score'] = $scoreDuJoueur;
+		echo "Votre score est de ".$_SESSION{'score'}; // Affichage du score du joueur	 
 	};
 ?>
 
@@ -19,7 +20,7 @@
 -->
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir='ltr'>
 <head>
 	<meta charset="utf-8">
 	
@@ -35,7 +36,7 @@
 	<h1> Sokoban </h1>
 	<a class="logOutLink" href="php_session_abort.php">Se déconnecter</a>
 	<div><h3>Nombre de pas:<span id="Compteurdepas">0</span></div></h3>
-	<div class="score">Votre score: <?php echo $_SESSION["user_score"]; ?></div>
+	<div class="score">Votre score: <?php echo $_SESSION["score"]; ?></div>
 	<button onclick="printtableau()">Lancer la partie</button>
 	
 	<table id="tbltableau"></table>
