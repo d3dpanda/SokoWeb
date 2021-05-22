@@ -6,8 +6,8 @@
 
     echo "<h1>Bienvenue ".$pseudo."</h1>";
 // Sélection du score du joueur par rapport à son pseudo
-	$scoreUser = $bdd->query("SELECT score FROM User WHERE pseudo ='".$pseudo."'");
-	while ($scoreDuJoueur = $scoreUser->fetch()) { // Sélection de la donnée
+	$scoreUser = $bdd->query("SELECT score FROM User WHERE pseudo ='admin'; ");
+	while ($scoreDuJoueur = $scoreUser->fetch() ) { // Sélection de la donnée
 		$_SESSION['score'] = $scoreDuJoueur;
 		echo "Votre score est de ".$_SESSION{'score'}; // Affichage du score du joueur	 
 	};
