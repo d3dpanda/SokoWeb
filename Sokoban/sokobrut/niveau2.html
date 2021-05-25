@@ -50,18 +50,18 @@ function Consttableau() {
 
 		}
 	}
-	//Faire apparaitres les murs de façons plus précise
+	//Placer les Murs
 	tableau[2][2].type = Mur;
 	tableau[4][4].type = Mur;
 	tableau[2][4].type = Mur;	
 	tableau[4][2].type = Mur;
-	//Faire apparaitres les Objectifs
+	//Placer les Objectifs
 	tableau[1][1].type = Objectif;
 	tableau[5][5].type = Objectif;
 	tableau[1][5].type = Objectif;
-	//Faire apparaitres le Joueur
+	//Placer le Joueur
 	tableau[PosiJoueur.i][PosiJoueur.j].ElementduJeu = Joueur;
-	//Faire apparaitres les caisses
+	//Placer les Boites
 	tableau[3][2].ElementduJeu = Boite;
 	tableau[4][3].ElementduJeu = Boite;
 	tableau[3][4].ElementduJeu = Boite;
