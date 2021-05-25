@@ -1,3 +1,18 @@
+<?php
+	session_start();
+	include "../../login/bdd.php";
+	require "../header.php";
+	$pseudo = $_SESSION['pseudo'];
+
+	echo "<h1>Bienvenue ".$pseudo."</h1>";
+// Sélection du score du joueur par rapport à son pseudo
+	$scoreUser = $bdd ->query("SELECT score FROM User WHERE pseudo='".$pseudo"'");
+	while ($scoreDuJoueur = $scoreUser->fetch()) {
+		$_SESSION['score'] = $scoreDuJoueur;
+		echo "Votre score est de ".$_SESSION['score'];
+	};
+
+?>
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
