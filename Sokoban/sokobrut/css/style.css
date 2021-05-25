@@ -1,6 +1,40 @@
-body {background: linear-gradient(0.25turn,#0F4EDC, #3f87a6,#ebf8e1, #3f87a6,#0F4EDC); color: black; margin-left: 37%}
-div {margin-left: 14%}
+body {
+    /*background: linear-gradient(0.25turn,#0F4EDC, #3f87a6,#ebf8e1, #3f87a6,#0F4EDC); */
+    background: linear-gradient(to right, #334BFF, #5C6CE2);
+    color: black; 
+    margin-left: 37%;
+}
+#content{
+    background-color: #fff;
+    width:fit-content;
+    margin: auto, auto;
+    padding:10px;
+    border:2px;
+    border-radius:20px;
+}
+h1{
+    text-align:center;
+}
 
-.cellMur {width:50px; height: 50px; background:orange}
-.cellSol {width:50px; height: 50px; background-color: grey}
-.cellObjectif {width:50px; height: 50px; background-color: red}
+.cellMur {
+     width:50px; 
+     height: 50px; 
+     background:orange;
+}
+
+
+#Choixdulvl{
+     border:1px #000;
+     border-radius:20px;
+     padding:10px;
+}
+.cellSol {
+     width:50px; 
+     height: 50px; 
+     background-color: grey;
+}
+.cellObjectif {
+     width:50px; 
+     height: 50px; 
+     background-color: red;
+}

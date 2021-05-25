@@ -14,6 +14,7 @@
 	<!--Titre de l'accueil-->
 	<h1> Sokoban </h1>	
 	<table id="tbltableau"></table>
+        <div id="content">
 	<p><strong>Niveau de difficulté:</strong></p>
 	<!--Selection d'un niveau facile-->	
 	<p>Facile:</p>
@@ -21,7 +22,7 @@
 		<!--Selection du niveau dans la difficulté Facile-->	
 		<option  value="0" onclick="">Choisissez un niveau</option>
 		<!--Selection du niveau Facile1-->	
-		<option value="1" onclick="window.location='niveau1.html'">Niveau-1</option>
+		<option value="1" onclick="window.location='niveau1.html'"><a href="niveau1.html">Niveau-1</a></option>
 		<!--Selection du niveau Facile2-->
 		<option value="2" onclick="window.location='niveau2.html'">Niveau-2</option>
 		
@@ -30,7 +31,7 @@
 	<p>Normal:</p>
 	<select name="lvl" id="Choixdulvl">
 		<!--Selection du niveau dans la difficulté Normal-->	
-		<option  value="0" onclick="">Choisissez un niveau</option>
+		<option  value="0" disabled>Choisissez un niveau</option>
 		<!--Selection du niveau Normal1-->	
 		<option value="1" onclick="window.location='NiveauNormal1.html'">Niveau-1</option>
 		<!--Selection du niveau Normal2-->	
@@ -59,8 +60,10 @@
 		<option value="1" onclick="window.location='NiveauIMPOSSIBLE1.html'">Niveau-1</option>
 		<!--Selection du niveau Impossible2-->	
 		<option value="2" onclick="window.location='NiveauIMPOSSIBLE2.html'">Niveau-2</option>
+</div>
 </div>   
 </select>
+
 </body>
 
 </html>
