@@ -2,19 +2,32 @@ body {
     /*background: linear-gradient(0.25turn,#0F4EDC, #3f87a6,#ebf8e1, #3f87a6,#0F4EDC); */
     background: linear-gradient(to right, #334BFF, #5C6CE2);
     color: black; 
-    margin-left: 37%;
 }
 #content{
     background-color: #fff;
     width:fit-content;
-    margin: auto, auto;
+    margin-right: auto;
+    margin-left:auto;
     padding:10px;
     border:2px;
     border-radius:20px;
 }
 h1{
     text-align:center;
+
+
 }
+
+h4{
+     background-color:#fed;
+     width:fit-content;
+     float:left;
+     padding: 10px;
+     border: 1px ;
+     border-radius: 20px;
+     
+}
+
 
 .cellMur {
      width:50px; 

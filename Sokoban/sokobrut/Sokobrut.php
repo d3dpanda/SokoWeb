@@ -2,16 +2,17 @@
 	session_start();
 	include "../../login/bdd.php";
 	require "../header.php";
+	echo $_SESSION['id'];
 //	$pseudo = $_SESSION['pseudo'];
 	$pseudo = "admin";
 	$_SESSION['pseudo'] = "admin";
-echo "<h1>Bienvenue ".$pseudo."</h1>";
+echo "<h1>Bienvenue ".$pseudo." sur SokoWeb !</h1>";
 // Sélection du score du joueur par rapport à son pseudo
 	try{
 		$scoreUser = $bdd -> query('SELECT score FROM User WHERE pseudo = "'.$_SESSION['pseudo'].'";');
 		while ($scoreDuJoueur = $scoreUser->fetch()) {
-			$_SESSION['score'] = $scoreDuJoueur;
-			echo "Votre score est de ".$_SESSION['score'];
+			$_SESSION['score'] = $scoreDuJoueur['score'];
+			echo "<h4>Votre score est de ".$_SESSION['score']."</h4>";
 		};
 	}
 	catch(Exception $e) {
@@ -34,7 +35,6 @@ echo "<h1>Bienvenue ".$pseudo."</h1>";
 <div>
 	</head>
 	<!--Titre de l'accueil-->
-	<h1> Sokoban </h1>	
 	<table id="tbltableau"></table>
         <div id="content">
 	<p><strong>Niveau de difficulté:</strong></p>

@@ -1,5 +1,7 @@
 <?php
     session_start();
+    $_SESSION['id'] = session_id();
+    
 //    echo $_SESSION['id'];
     
 // Récupération de l'id de session de bdd_register.php
