@@ -33,7 +33,7 @@
                     echo "2...";
                     if ($mdpConfirm[0] == $pass) {
                         echo "Le mot de passe est correct !\n ";
-                        header("Location: ../Sokoban/Sokoban.php");
+                        header("Location: ../Sokoban/sokobrut/Sokobrut.php");
                     }
                     else{
                         echo "Le mot de passe n'est pas correct...\n";

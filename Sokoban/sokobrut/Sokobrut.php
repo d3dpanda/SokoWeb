@@ -6,11 +6,17 @@
 
 	echo "<h1>Bienvenue ".$pseudo."</h1>";
 // Sélection du score du joueur par rapport à son pseudo
-	$scoreUser = $bdd ->query("SELECT score FROM User WHERE pseudo='".$pseudo"'");
-	while ($scoreDuJoueur = $scoreUser->fetch()) {
-		$_SESSION['score'] = $scoreDuJoueur;
-		echo "Votre score est de ".$_SESSION['score'];
+	try{
+		$scoreUser = $bdd -> query("SELECT score FROM User WHERE pseudo = '$pseudo'");
+		while ($scoreDuJoueur = $scoreUser->fetch()) {
+			$_SESSION['score'] = $scoreDuJoueur;
+			echo "Votre score est de ".$_SESSION['score'];
+		};
+	}
+	catch(Exception $e) {
+		die("Erreur: ".$e->getMessage());
 	};
+
 
 ?>
 <html lang="fr">
