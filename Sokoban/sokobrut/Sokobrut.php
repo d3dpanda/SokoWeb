@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	
 	include "../../login/bdd.php";
 	require "../header.php";
 	echo $_SESSION['id'];
@@ -36,7 +37,8 @@ echo "<h1>Bienvenue ".$pseudo." sur SokoWeb !</h1>";
 	</head>
 	<!--Titre de l'accueil-->
 	<table id="tbltableau"></table>
-        <div id="content">
+    <a href="../php_session_abort.php">Se déconnecter</a>   
+	<div id="content">
 	<p><strong>Niveau de difficulté:</strong></p>
 	<!--Selection d'un niveau facile-->	
 	<p>Facile:</p>

@@ -3,9 +3,9 @@ body {
     background: linear-gradient(to right, #334BFF, #5C6CE2);
     color: black; 
 }
-#content{
+div#content{
     background-color: #fff;
-    width:fit-content;
+    width: auto;
     margin-right: auto;
     margin-left:auto;
     padding:10px;
@@ -14,12 +14,14 @@ body {
 }
 h1{
     text-align:center;
+}
 
-
+a{
+     color:white;
+     text-decoration: none;
 }
 
 h4{
-     background-color:#fed;
      width:fit-content;
      float:left;
      padding: 10px;
@@ -27,7 +29,9 @@ h4{
      border-radius: 20px;
      
 }
-
+p.hidden{
+     display: none;
+}
 
 .cellMur {
      width:50px; 

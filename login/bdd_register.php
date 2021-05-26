@@ -45,7 +45,7 @@
             elseif ($data[0] == 0) { // Si le pseudo n'existe pas 
                 echo "Nouveau compte crée\n"; 
                 sleep(1);
-                header("Location: ../Sokoban/Sokoban.php");
+                header("Location: ../Sokoban/sokobrut/Sokobrut.php");
             }
         
         

@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $_SESSION['id'] = session_id();
+    $_SESSION['id'] = "<p class='hidden'>".session_id()."</p>";
     
 //    echo $_SESSION['id'];
     
